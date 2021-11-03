@@ -1343,24 +1343,40 @@ input[type="button"],
   &.style2 {
     .content {
       border-color: _palette(accent-cc);
+
+      a:hover {
+        color: _palette(accent-ds) !important;
+      }
     }
   }
 
   &.style3 {
     .content {
       border-color: _palette(accent-cs);
+
+      a:hover {
+        color: _palette(accent-ml) !important;
+      }
     }
   }
 
   &.style4 {
     .content {
       border-color: _palette(accent-ds);
+
+      a:hover {
+        color: _palette(accent-cv) !important;
+      }
     }
   }
 
   &.style5 {
     .content {
       border-color: _palette(accent-ml);
+
+      a:hover {
+        color: _palette(accent-cc) !important;
+      }
     }
   }
 

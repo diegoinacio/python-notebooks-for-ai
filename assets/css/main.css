@@ -2777,16 +2777,32 @@ input[type="button"]:disabled,
   border-color: #f2b90d;
 }
 
+.spotlight.style2 .content a:hover {
+  color: #40acbf !important;
+}
+
 .spotlight.style3 .content {
   border-color: #46bf40;
+}
+
+.spotlight.style3 .content a:hover {
+  color: #6c40bf !important;
 }
 
 .spotlight.style4 .content {
   border-color: #40acbf;
 }
 
+.spotlight.style4 .content a:hover {
+  color: #bf4079 !important;
+}
+
 .spotlight.style5 .content {
-  border-color: #ac40bf;
+  border-color: #6c40bf;
+}
+
+.spotlight.style5 .content a:hover {
+  color: #f2b90d !important;
 }
 
 .spotlight.inactive .content {
