@@ -13,8 +13,16 @@
       font-weight: lighter;
       text-anchor: middle;
     }
+
+    .notebooks {
+      fill: hsl(45, 90%, 50%);
+      font-size: 90px;
+      transform: rotate(-5deg);
+      transform-origin: 980px 630px;
+    }
   </style>
   <rect x="0" y="0" />
-  <text x="640" y="325">Data</text>
-  <text x="640" y="595">Science</text>
+  <text x="640" y="320">Data</text>
+  <text x="640" y="590">Science</text>
+  <text x="980" y="630" class="notebooks">Notebooks</text>
 </svg>
