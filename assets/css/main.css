@@ -2563,10 +2563,9 @@ input[type="button"]:disabled,
   opacity: 0.25;
 }
 
-/* Goto Next */
-.goto-next {
+/* Goto */
+[class*="goto"] {
   border: 0;
-  bottom: 0;
   display: block;
   height: 5em;
   left: 50%;
@@ -2579,8 +2578,7 @@ input[type="button"]:disabled,
   z-index: 1;
 }
 
-.goto-next:before {
-  background-image: url("images/arrow.svg");
+[class*="goto"]:before {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2593,6 +2591,24 @@ input[type="button"]:disabled,
   top: 50%;
   width: 2em;
   z-index: 1;
+}
+
+.goto-next {
+  bottom: 0;
+}
+
+.goto-next:before {
+  background-image: url("images/arrow.svg");
+}
+
+.goto-before {
+  top: 0;
+}
+
+.goto-before:before {
+  background-image: url("images/arrow.svg");
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /* Spotlight */
@@ -2719,7 +2735,7 @@ input[type="button"]:disabled,
   position: absolute;
 }
 
-.spotlight .goto-next {
+.spotlight [class*="goto"] {
   -webkit-transform: translate(0,0);
   transform: translate(0,0);
   -webkit-transition: -webkit-transform 0.75s ease, opacity 1s ease-in;
@@ -2809,7 +2825,7 @@ input[type="button"]:disabled,
   opacity: 0;
 }
 
-.spotlight.inactive .goto-next {
+.spotlight.inactive [class*="goto"] {
   -webkit-transform: translate(0,1.5em);
   transform: translate(0,1.5em);
   opacity: 0;
@@ -3033,8 +3049,7 @@ body.landing #header {
 /* Banner */
 #banner {
   background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../../images/banner.jpg");
+  background-color: #f2b90d;
   background-position: center center;
   background-size: cover;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3236,7 +3251,7 @@ body.is-touch #banner {
   .spotlight .content ul.actions li:first-child {
     padding-left: 0;
   }
-  .spotlight .goto-next {
+  .spotlight [class*="goto"] {
     display: none;
   }
   /* Wrapper */
@@ -3247,7 +3262,7 @@ body.is-touch #banner {
   #banner {
     background-attachment: scroll;
   }
-  #banner .goto-next {
+  #banner [class*="goto"] {
     height: 7em;
   }
   #banner .content {
@@ -3314,7 +3329,7 @@ body.is-touch #banner {
     margin: 0 0 2em 0;
   }
   /* Goto Next */
-  .goto-next:before {
+  [class*="goto"]:before {
     height: 0.8em;
     margin: -0.4em 0 0 -0.6em;
     width: 1.2em;

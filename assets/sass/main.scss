@@ -1196,11 +1196,10 @@ input[type="button"],
   }
 }
 
-/* Goto Next */
+/* Goto */
 
-.goto-next {
+[class*="goto"] {
   border: 0;
-  bottom: 0;
   display: block;
   height: 5em;
   left: 50%;
@@ -1213,7 +1212,6 @@ input[type="button"],
   z-index: 1;
 
   &:before {
-    background-image: url("images/arrow.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1226,6 +1224,27 @@ input[type="button"],
     top: 50%;
     width: 2em;
     z-index: 1;
+  }
+}
+
+.goto-next {
+  bottom: 0;
+
+  &:before {
+    background-image: url("images/arrow.svg");
+  }
+}
+
+.goto-before {
+  top: 0;
+
+  &:before {
+    background-image: url("images/arrow.svg");
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 
@@ -1275,7 +1294,7 @@ input[type="button"],
     position: absolute;
   }
 
-  .goto-next {
+  [class*="goto"] {
     @include vendor("transform", "translate(0,0)");
     @include vendor("transition", "transform 0.75s ease, opacity 1s ease-in");
     @include vendor("transition-delay", "0.5s");
@@ -1385,7 +1404,7 @@ input[type="button"],
       opacity: 0;
     }
 
-    .goto-next {
+    [class*="goto"] {
       @include vendor("transform", "translate(0,1.5em)");
       opacity: 0;
     }
@@ -1624,8 +1643,8 @@ body.landing {
 
 #banner {
   background-attachment: fixed;
-  background-color: _palette(accent2);
-  background-image: url("../../images/banner.jpg");
+  background-color: _palette(accent1);
+  // background-image: url("../../images/banner.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -1878,7 +1897,7 @@ body.is-touch {
       }
     }
 
-    .goto-next {
+    [class*="goto"] {
       display: none;
     }
   }
@@ -1895,7 +1914,7 @@ body.is-touch {
   #banner {
     background-attachment: scroll;
 
-    .goto-next {
+    [class*="goto"] {
       height: 7em;
     }
 
@@ -1989,7 +2008,7 @@ body.is-touch {
 
   /* Goto Next */
 
-  .goto-next {
+  [class*="goto"] {
     &:before {
       height: 0.8em;
       margin: -0.4em 0 0 -0.6em;
