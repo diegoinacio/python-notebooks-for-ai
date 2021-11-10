@@ -17,10 +17,10 @@
     </style>
     <linearGradient id="gradient" x1="0" x2="100%" y1="0" y2="0">
       <stop stop-color="hsl(45,90%,50%)" offset="0%" />
-      <stop stop-color="hsl(117,50%,50%)" offset="25%" />
-      <stop stop-color="hsl(189,50%,50%)" offset="50%" />
-      <stop stop-color="hsl(261,50%,50%)" offset="75%" />
-      <stop stop-color="hsl(333,50%,50%)" offset="100%" />
+      <stop stop-color="hsl(117,70%,50%)" offset="25%" />
+      <stop stop-color="hsl(189,70%,50%)" offset="50%" />
+      <stop stop-color="hsl(261,70%,50%)" offset="75%" />
+      <stop stop-color="hsl(333,70%,50%)" offset="100%" />
     </linearGradient>
   </defs>
   <rect id="bg" />

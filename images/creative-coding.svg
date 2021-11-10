@@ -15,7 +15,7 @@
     }
 
     .notebooks {
-      fill: hsl(261, 50%, 50%);
+      fill: hsl(261, 70%, 50%);
       font-size: 90px;
       transform: rotate(-5deg);
       transform-origin: 980px 630px;
