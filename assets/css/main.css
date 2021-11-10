@@ -2782,11 +2782,19 @@ input[type="button"]:disabled,
 }
 
 .spotlight.style1 .content {
-  border-color: #bf4079;
+  border-color: #d92677;
 }
 
 .spotlight.style1 .content a:hover {
-  color: #46bf40 !important;
+  color: #2fd926 !important;
+  -webkit-box-shadow: inset 0 0 0 1px #2fd926;
+          box-shadow: inset 0 0 0 1px #2fd926;
+}
+
+.spotlight.style1 .content p > span {
+  border-bottom: 1px dotted #2fd926;
+  background-color: rgba(47, 217, 38, 0.1);
+  padding: 0 0.2em 0.2em 0.2em;
 }
 
 .spotlight.style2 .content {
@@ -2794,31 +2802,63 @@ input[type="button"]:disabled,
 }
 
 .spotlight.style2 .content a:hover {
-  color: #40acbf !important;
+  color: #26bed9 !important;
+  -webkit-box-shadow: inset 0 0 0 1px #26bed9;
+          box-shadow: inset 0 0 0 1px #26bed9;
+}
+
+.spotlight.style2 .content p > span {
+  border-bottom: 1px dotted #26bed9;
+  background-color: rgba(38, 190, 217, 0.1);
+  padding: 0 0.2em 0.2em 0.2em;
 }
 
 .spotlight.style3 .content {
-  border-color: #46bf40;
+  border-color: #2fd926;
 }
 
 .spotlight.style3 .content a:hover {
-  color: #6c40bf !important;
+  color: #6526d9 !important;
+  -webkit-box-shadow: inset 0 0 0 1px #6526d9;
+          box-shadow: inset 0 0 0 1px #6526d9;
+}
+
+.spotlight.style3 .content p > span {
+  border-bottom: 1px dotted #6526d9;
+  background-color: rgba(101, 38, 217, 0.1);
+  padding: 0 0.2em 0.2em 0.2em;
 }
 
 .spotlight.style4 .content {
-  border-color: #40acbf;
+  border-color: #26bed9;
 }
 
 .spotlight.style4 .content a:hover {
-  color: #bf4079 !important;
+  color: #d92677 !important;
+  -webkit-box-shadow: inset 0 0 0 1px #d92677;
+          box-shadow: inset 0 0 0 1px #d92677;
+}
+
+.spotlight.style4 .content p > span {
+  border-bottom: 1px dotted #d92677;
+  background-color: rgba(217, 38, 119, 0.1);
+  padding: 0 0.2em 0.2em 0.2em;
 }
 
 .spotlight.style5 .content {
-  border-color: #6c40bf;
+  border-color: #6526d9;
 }
 
 .spotlight.style5 .content a:hover {
   color: #f2b90d !important;
+  -webkit-box-shadow: inset 0 0 0 1px #f2b90d;
+          box-shadow: inset 0 0 0 1px #f2b90d;
+}
+
+.spotlight.style5 .content p > span {
+  border-bottom: 1px dotted #f2b90d;
+  background-color: rgba(242, 185, 13, 0.1);
+  padding: 0 0.2em 0.2em 0.2em;
 }
 
 .spotlight.inactive .content {
