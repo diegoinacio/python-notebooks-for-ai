@@ -1733,11 +1733,27 @@ body.is-touch {
 
   .copyright {
     color: _palette(fg-light);
-    font-size: 0.8em;
+    font-size: 1.2em;
     line-height: 1em;
-    margin: 2em 0 0 0;
+    margin: 0 0 1em 0;
     padding: 0;
-    text-align: center;
+  }
+
+  a {
+    border-bottom: none;
+    font-weight: bold;
+
+    &:hover {
+      color: _palette(accent1);
+    }
+  }
+
+  .website {
+    color: _palette(accent-cc);
+  }
+
+  .github {
+    color: _palette(accent-cv);
   }
 
   .easter-egg {
