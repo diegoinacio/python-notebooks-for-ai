@@ -30,10 +30,11 @@ footer_a.innerText = "github.com/diegoinacio";
 footer_div.appendChild(footer_a);
 footer.appendChild(footer_div);
 
-// * Easter Egg
+// * Hidden Content
 const ee_div = document.createElement("div");
-ee_div.className = "easter-egg";
-ee_div.innerText = `easter egg`;
+ee_div.className = "hidden-content";
+ee_div.innerText = "🥷🏾";
+ee_div.title = "Hidden Content";
 footer.appendChild(ee_div);
 
 ee_div.addEventListener("click", (e) => {
