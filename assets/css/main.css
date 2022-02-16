@@ -3199,17 +3199,16 @@ body.is-touch #banner {
   color: #d92677;
 }
 
-#footer .easter-egg {
+#footer .hidden-content {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
-  right: 1em;
+  right: 0.2em;
   bottom: 0.5em;
-  color: rgba(255, 255, 255, 0.1);
+  font-size: 2.5em;
 }
 
-#footer .easter-egg:hover {
-  color: rgba(255, 255, 255, 0.5);
+#footer .hidden-content:hover {
   cursor: pointer;
 }
 
