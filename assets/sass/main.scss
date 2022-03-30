@@ -1698,6 +1698,51 @@ body.landing {
         margin: (_size(element-margin) * 0.25) 0 0 0;
         top: 0;
       }
+
+      a {
+        margin: 0 0.2em 0 0.2em;
+        padding: 0 0.2em 0.2em 0.2em;
+
+        // ! Styles mixin
+        @mixin custom-banner-bt-styles($color1, $color2) {
+          border-color: $color2;
+          background-color: transparentize($color: $color1, $amount: 0.9);
+
+          &:hover {
+            color: white !important;
+            background-color: transparentize($color: $color1, $amount: 0.75);
+            border-bottom: 1px solid $color2;
+          }
+        }
+
+        &[href*="computer-science"] {
+          @include custom-banner-bt-styles(
+            _palette(accent-cs),
+            _palette(accent-cv)
+          );
+        }
+
+        &[href*="data-science"] {
+          @include custom-banner-bt-styles(
+            _palette(accent-ds),
+            _palette(accent-cc)
+          );
+        }
+
+        &[href*="machine-learning"] {
+          @include custom-banner-bt-styles(
+            _palette(accent-ml),
+            _palette(accent-cs)
+          );
+        }
+
+        &[href*="computer-vision"] {
+          @include custom-banner-bt-styles(
+            _palette(accent-cv),
+            _palette(accent-ds)
+          );
+        }
+      }
     }
 
     .image {
@@ -1762,9 +1807,11 @@ body.is-touch {
     right: 0.2em;
     bottom: 0.5em;
     font-size: 2.5em;
+    opacity: 0.5;
 
     &:hover {
       cursor: pointer;
+      opacity: 1;
     }
   }
 }
