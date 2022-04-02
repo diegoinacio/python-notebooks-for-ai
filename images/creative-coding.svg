@@ -16,13 +16,13 @@
 
     .notebooks {
       fill: hsl(261, 70%, 50%);
-      font-size: 90px;
-      transform: rotate(-5deg);
-      transform-origin: 980px 630px;
+      font-size: 150px;
+      transform: rotate(-8deg);
+      transform-origin: 640px 400px;
     }
   </style>
   <rect x="0" y="0" />
   <text x="640" y="320">Creative</text>
   <text x="640" y="590">Coding</text>
-  <text x="980" y="630" class="notebooks">Notebooks</text>
+  <text x="640" y="400" class="notebooks">Notebooks</text>
 </svg>
