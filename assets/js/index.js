@@ -10,19 +10,17 @@ let year_ft = new Date().getFullYear();
 footer_p.innerText = `© ${year_ft} Diego Inácio.`;
 
 // * Links
-let footer_div = document.createElement("div");
+var footer_div = document.createElement("div");
 let footer_a = document.createElement("a");
-footer_a.className = "website";
 footer_a.href = "https://diegoinacio.github.io/";
-footer_a.title = "Personal Website";
+footer_a.title = "personal website";
 footer_a.target = "_blank";
 footer_a.innerText = "diegoinacio.github.io";
 footer_div.appendChild(footer_a);
 footer.appendChild(footer_div);
 
-footer_div = document.createElement("div");
+var footer_div = document.createElement("div");
 footer_a = document.createElement("a");
-footer_a.className = "github";
 footer_a.href = "https://github.com/diegoinacio";
 footer_a.title = "GitHub";
 footer_a.target = "_blank";
