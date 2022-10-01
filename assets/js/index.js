@@ -38,4 +38,7 @@ ee_div.addEventListener("click", (e) => {
   const cc = document.getElementById("creative-coding");
   cc.style.display = "block";
   footer.removeChild(e.target);
+
+  document.getElementById("cv-goto-next1").style = "";
+  document.getElementById("cv-goto-next2").style = "display: none;";
 });
