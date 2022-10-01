@@ -31,8 +31,7 @@ footer.appendChild(footer_div);
 // * Hidden Content
 const ee_div = document.createElement("div");
 ee_div.className = "hidden-content";
-ee_div.innerText = "🥷🏾";
-ee_div.title = "Hidden Content";
+ee_div.title = "hidden content";
 footer.appendChild(ee_div);
 
 ee_div.addEventListener("click", (e) => {
