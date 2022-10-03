@@ -2187,28 +2187,27 @@ body.is-touch {
   }
 
   #titleBar {
-    @include vendor("backface-visibility", "hidden");
     @include vendor("transition", "transform #{_duration(navPanel)} ease");
     display: block;
     height: 44px;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: _misc(z-index-base) + 1;
-    background: _palette(fg);
-    box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+    background: _palette(bg);
 
     .title {
       color: _palette(fg);
       display: block;
-      font-weight: _font(weight-bold);
+      
       height: 44px;
       line-height: 44px;
       text-align: center;
 
       a {
         color: inherit;
+        font-weight: _font(weight-bold);
         border: 0;
       }
     }
