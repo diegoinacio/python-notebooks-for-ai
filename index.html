@@ -2,13 +2,18 @@
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJZV2Q3DR8"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FJZV2Q3DR8"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-FJZV2Q3DR8');
+      gtag("config", "G-FJZV2Q3DR8");
     </script>
 
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -35,7 +40,7 @@
     <meta
       name="description"
       property="og:description"
-      content="An authorial Python cookbook on Computer Science, Data Science, Machine Learning, Computer Vision and more."
+      content="A free and ongoing collection of cookbooks on Computer Science, Data Science, Machine Learning, Computer Vision and more."
     />
     <meta
       name="image"
@@ -56,54 +61,88 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header id="header">
-        <h1 id="logo">
-          <a href="https://diegoinacio.github.io/">Diego Inácio</a>
-        </h1>
+        <div id="logo">
+          Created with ❤️ by
+          <a href="https://diegoinacio.github.io/" title="personal website"
+            >Diego Inácio</a
+          >
+        </div>
       </header>
 
       <!-- Banner -->
       <section id="banner">
         <div class="content">
           <header>
-            <h2>Python Notebooks</h2>
-            <p>An authorial <em>Python cookbook</em> on</p>
-            <p><a href="#computer-science" class="scrolly .style1" title="Computer Science Notebooks">Computer Science</a>,<a href="#data-science" class="scrolly .style2" title="Data Science Notebooks">Data Science</a>,<a href="#machine-learning" class="scrolly .style3" title="Machine Learning Notebooks">Machine Learning</a>,<a href="#computer-vision " class="scrolly .style4" title="Computer Vision Notebooks">Computer Vision</a> and more.</p>
+            <h1>Python Notebooks</h1>
+            <p class="subtitle">
+              A <em>free and ongoing</em> collection of cookbooks on
+            </p>
+            <p class="list">
+              <a
+                href="#computer-science"
+                class="scrolly .style1"
+                title="Computer Science Notebooks"
+                >Computer Science</a
+              >,<a
+                href="#data-science"
+                class="scrolly .style2"
+                title="Data Science Notebooks"
+                >Data Science</a
+              >,<a
+                href="#machine-learning"
+                class="scrolly .style3"
+                title="Machine Learning Notebooks"
+                >Machine Learning</a
+              >,<a
+                href="#computer-vision "
+                class="scrolly .style4"
+                title="Computer Vision Notebooks"
+                >Computer Vision</a
+              >
+              and more.
+            </p>
           </header>
           <span class="image"><img src="images/banner_logo.svg" alt="" /></span>
         </div>
-        <a href="#computer-science" class="goto-next scrolly">Next</a>
+        <a href="#computer-science" class="goto-next dark scrolly">Next</a>
       </section>
 
       <!-- Computer Science Notebooks -->
       <section id="computer-science" class="spotlight style1 left">
         <span class="image fit main"
-          ><img src="images/computer-science.svg" alt="Computer Science Notebooks"
+          ><img
+            src="images/computer-science.svg"
+            alt="Computer Science Notebooks"
         /></span>
         <div class="content">
           <header>
+            <h3>Volume 1</h3>
             <h2>Computer Science Notebooks</h2>
-            <hr>
+            <hr />
           </header>
           <p>
-            An authorial collection of fundamental <span>Python recipes</span> covering various topics on theoretical and practical aspects of general <strong>Computer Science</strong> and <strong>Programming</strong>.
-            <ul>
-              <li>Algorithms and Data Structure</li>
-              <li>Numerical Analysis and Methods</li>
-              <li>Scientific Computing</li>
-              <li>High Performance Applications</li>
-            </ul>
+            An authorial set of fundamental
+            <span>Python recipes</span> that cover various topics on theoretical
+            and practical aspects of general
+            <strong>Computer Science</strong> and <strong>Programming</strong>.
           </p>
+          <ul class="content-list">
+            <li>Algorithms and Data Structure</li>
+            <li>Numerical Analysis and Methods</li>
+            <li>Scientific Computing</li>
+            <li>High Performance Applications</li>
+          </ul>
           <ul class="actions">
             <li>
               <a
                 href="https://diegoinacio.github.io/computer-science-notebooks/"
                 class="button"
-                >Visit Page</a
+                >Go to cookbook</a
               >
             </li>
           </ul>
         </div>
-        <a href="#data-science" class="goto-next scrolly">Next</a>
+        <a href="#data-science" class="goto-next light scrolly">Next</a>
       </section>
 
       <!-- Data Science Notebooks -->
@@ -113,127 +152,164 @@
         /></span>
         <div class="content">
           <header>
+            <h3>Volume 2</h3>
             <h2>Data Science Notebooks</h2>
-            <hr>
+            <hr />
           </header>
           <p>
-            An authorial collection of fundamental <span>Python recipes</span> that introduce best practices and the key concepts from <strong>Data Science</strong> and <strong>Analytics</strong>.
-            <ul>
-              <li>Statistics and Probabilities</li>
-              <li>Data Mining and Predictive Models</li>
-              <li>Fundamental Mathematical Concepts</li>
-              <li>Data Visualization</li>
-            </ul>
+            An authorial set of fundamental
+            <span>Python recipes</span> that introduce best practices and the
+            key concepts from <strong>Data Science</strong> and
+            <strong>Analytics</strong>.
           </p>
+          <ul class="content-list">
+            <li>Statistics and Probabilities</li>
+            <li>Data Mining and Predictive Models</li>
+            <li>Fundamental Mathematical Concepts</li>
+            <li>Data Visualization and Storytelling</li>
+          </ul>
           <ul class="actions">
             <li>
               <a
                 href="https://diegoinacio.github.io/data-science-notebooks/"
                 class="button"
-                >Visit Page</a
+                >Go to cookbook</a
               >
             </li>
           </ul>
         </div>
-        <a href="#computer-science" class="goto-before scrolly">Before</a>
-        <a href="#machine-learning" class="goto-next scrolly">Next</a>
+        <a href="#computer-science" class="goto-before light scrolly">Before</a>
+        <a href="#machine-learning" class="goto-next light scrolly">Next</a>
       </section>
 
       <!-- Machine Learning Notebooks -->
       <section id="machine-learning" class="spotlight style3 left">
         <span class="image fit main"
-          ><img src="images/machine-learning.svg" alt="Machine Learning Notebooks"
+          ><img
+            src="images/machine-learning.svg"
+            alt="Machine Learning Notebooks"
         /></span>
         <div class="content">
           <header>
+            <h3>Volume 3</h3>
             <h2>Machine Learning Notebooks</h2>
-            <hr>
+            <hr />
           </header>
           <p>
-            An authorial collection of fundamental <span>Python recipes</span> that present the main models and techniques of <strong>Machine Learning</strong> and <strong>Artificial Intelligence</strong>.
-            <ul>
-              <li>Deep Learning and Neural Networks</li>
-              <li>Time Series Analysis</li>
-              <li>Natural Language Processing</li>
-              <li>Supervised and Unsupervised Learning</li>
-            </ul>
+            An authorial set of fundamental
+            <span>Python recipes</span> that present the main models and
+            techniques of <strong>Machine Learning</strong> and
+            <strong>Artificial Intelligence</strong>.
           </p>
+          <ul class="content-list">
+            <li>Deep Learning and Neural Networks</li>
+            <li>Time Series Analysis</li>
+            <li>Natural Language Processing</li>
+            <li>Mathematics and Modeling</li>
+          </ul>
           <ul class="actions">
             <li>
               <a
                 href="https://diegoinacio.github.io/machine-learning-notebooks/"
                 class="button"
-                >Visit Page</a
+                >Go to cookbook</a
               >
             </li>
           </ul>
         </div>
-        <a href="#data-science" class="goto-before scrolly">Before</a>
-        <a href="#computer-vision" class="goto-next scrolly">Next</a>
+        <a href="#data-science" class="goto-before light scrolly">Before</a>
+        <a href="#computer-vision" class="goto-next light scrolly">Next</a>
       </section>
 
       <!-- Computer Vision Notebooks -->
       <section id="computer-vision" class="spotlight style4 right">
         <span class="image fit main bottom"
-          ><img src="images/computer-vision.svg" alt="Computer Vision Notebooks"
+          ><img
+            src="images/computer-vision.svg"
+            alt="Computer Vision Notebooks"
         /></span>
         <div class="content">
           <header>
+            <h3>Volume 4</h3>
             <h2>Computer Vision Notebooks</h2>
-            <hr>
+            <hr />
           </header>
           <p>
-            An authorial collection of fundamental <span>Python recipes</span> that present practical and conceptual approaches to <strong>Computer Vision</strong> and <strong>Digital Image Processing</strong>.
-            <ul>
-              <li>Deep Convolutional Neural Networks</li>
-              <li>Digital Image and Signal Processing</li>
-              <li>Computer Graphics and 3D</li>
-              <li>Object Detection and Pattern Recognition</li>
-            </ul>
+            An authorial set of fundamental
+            <span>Python recipes</span> that show practical and conceptual
+            approaches to <strong>Computer Vision</strong> and
+            <strong>Digital Image Processing</strong>.
           </p>
+          <ul class="content-list">
+            <li>Deep Convolutional Neural Networks</li>
+            <li>Digital Image and Signal Processing</li>
+            <li>Computer Graphics and 3D</li>
+            <li>Object Detection and Pattern Recognition</li>
+          </ul>
           <ul class="actions">
             <li>
               <a
                 href="https://diegoinacio.github.io/computer-vision-notebooks/"
                 class="button"
-                >Visit Page</a
+                >Go to cookbook</a
               >
             </li>
           </ul>
         </div>
-        <a href="#machine-learning" class="goto-before scrolly">Before</a>
+        <a href="#machine-learning" class="goto-before light scrolly">Before</a>
+        <a
+          href="#creative-coding"
+          class="goto-next light scrolly"
+          id="cv-goto-next1"
+          style="display: none"
+          >Next</a
+        >
+        <a href="#footer" class="goto-next light scrolly" id="cv-goto-next2"
+          >Next</a
+        >
       </section>
 
       <!-- Creative Coding Notebooks -->
-      <section id="creative-coding" class="spotlight style5 left" style="display: none;">
+      <section
+        id="creative-coding"
+        class="spotlight style5 left"
+        style="display: none"
+      >
         <span class="image fit main bottom"
-          ><img src="images/creative-coding.svg" alt="Creative Coding Notebooks"
+          ><img
+            src="images/creative-coding.svg"
+            alt="Creative Coding Notebooks"
         /></span>
         <div class="content">
           <header>
+            <h3>Volume 5</h3>
             <h2>Creative Coding Notebooks</h2>
-            <hr>
+            <hr />
           </header>
           <p>
-            An authorial collection of <span>fundamental recipes</span> on  <strong>Creative Coding</strong> and <strong>Recreational Programming</strong>.
-            <ul>
-              <li>Generative and Graphics Programming</li>
-              <li>Computer Graphics and 3D</li>
-              <li>Artificial Intelligence</li>
-              <li>Simulation and Chaotic Things</li>
-              <li>Sound Design</li>
-            </ul>
+            An authorial set of fundamental <span>Python recipes</span> that
+            bring fun and lovely applications of
+            <strong>Creative Coding</strong> and <strong>Computer Art</strong>.
           </p>
+          <ul class="content-list">
+            <li>Generative and Graphics Programming</li>
+            <li>Computer Graphics and 3D</li>
+            <li>Artificial Intelligence</li>
+            <li>Simulation and Chaotic Things</li>
+            <li>Sound Design</li>
+          </ul>
           <ul class="actions">
             <li>
               <a
                 href="https://diegoinacio.github.io/creative-coding-notebooks/"
                 class="button"
-                >Visit Page</a
+                >Go to cookbook</a
               >
             </li>
           </ul>
         </div>
+        <a href="#computer-vision" class="goto-before light scrolly">Before</a>
+        <a href="#footer" class="goto-next light scrolly">Next</a>
       </section>
 
       <!-- Footer -->
