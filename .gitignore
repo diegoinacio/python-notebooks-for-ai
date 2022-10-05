@@ -1,2 +1,5 @@
 # live sass compiler
 *.css.map
+
+# Jupyter
+.ipynb_checkpoints/
