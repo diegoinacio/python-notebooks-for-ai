@@ -1,56 +1,746 @@
-<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
+>
+<svg id="image"
+    width="256px" height="256px" 
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
   <style>
-    #bg {
-      fill: white;
-      width: 100%;
-      height: 100%;
+    @keyframes hover-color {
+      0% {
+        fill: white;
+      }
+
+      17% {
+        fill: hsl(117, 70%, 50%);
+      }
+
+      33% {
+        fill: hsl(189, 70%, 50%);
+      }
+
+      50% {
+        fill: hsl(261, 70%, 50%);
+      }
+
+      66% {
+        fill: hsl(333, 70%, 50%);
+      }
+
+      83% {
+        fill: hsl(45, 90%, 50%);
+      }
+
+      100% {
+        fill: white;
+      }
+    }
+    
+    rect {
+      animation-name: hover-color;
+      animation-iteration-count: infinite;
     }
 
-    rect[id*="color"] {
-      width: 50px;
-      height: 100%;
-      mix-blend-mode: hard-light;
-    }
+    .duration1 {animation-duration: 6.9152s;}
+    .duration2 {animation-duration: 11.2211s;}
+    .duration3 {animation-duration: 9.3773s;}
+    .duration4 {animation-duration: 12.8536s;}
+    .duration5 {animation-duration: 12.7998s;}
+    .duration6 {animation-duration: 7.7259s;}
+    .duration7 {animation-duration: 7.7646s;}
+    .duration8 {animation-duration: 13.0187s;}
+    .duration9 {animation-duration: 14.5814s;}
+    .duration10 {animation-duration: 13.7593s;}
 
-    #color1 {
-      fill: hsl(45, 90%, 50%);
-      transform: translate(71px, 0);
-    }
-
-    #color2 {
-      fill: hsl(189, 70%, 50%);
-      transform: translate(103px, 0) rotate(-18deg);
-      transform-origin: 25px 50%;
-    }
-
-    #color3 {
-      fill: hsl(333, 70%, 50%);
-      transform: translate(135px, 0);
-    }
+    .delay1 {animation-delay: -5.3673s;}
+    .delay2 {animation-delay: -7.5149s;}
+    .delay3 {animation-delay: -10.2519s;}
+    .delay4 {animation-delay: -10.6905s;}
+    .delay5 {animation-delay: -5.5538s;}
+    .delay6 {animation-delay: -8.4179s;}
+    .delay7 {animation-delay: -7.5462s;}
+    .delay8 {animation-delay: -0.2065s;}
+    .delay9 {animation-delay: -11.5924s;}
+    .delay10 {animation-delay: -13.2396s;}
 
     text {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 220px;
       text-anchor: middle;
-    }
-
-    .masks {
       fill: white;
     }
   </style>
-  <defs>
-    <symbol id="N">
-      <text x="128" y="215">N</text>
-    </symbol>
-    <mask id="_N" class="masks">
-      <use xlink:href="#N" />
-    </mask>
-  </defs>
-  <rect id="bg" />
-  <g style="mask: url(#_N);">
-    <rect id="color1" />
-    <rect id="color2" />
-    <rect id="color3" />
-  </g>
+  <rect class="duration3 delay7" x="0" y="0" width="8" height="8" />
+  <rect class="duration7 delay5" x="8" y="0" width="8" height="8" />
+  <rect class="duration5 delay2" x="0" y="8" width="8" height="8" />
+  <rect class="duration10 delay7" x="8" y="8" width="8" height="8" />
+  <rect class="duration9 delay8" x="16" y="0" width="16" height="16" />
+  <rect class="duration8 delay4" x="0" y="16" width="8" height="8" />
+  <rect class="duration6 delay7" x="8" y="16" width="8" height="8" />
+  <rect class="duration9 delay7" x="0" y="24" width="8" height="8" />
+  <rect class="duration10 delay3" x="8" y="24" width="8" height="8" />
+  <rect class="duration10 delay2" x="16" y="16" width="8" height="8" />
+  <rect class="duration4 delay9" x="24" y="16" width="8" height="8" />
+  <rect class="duration4 delay8" x="16" y="24" width="8" height="8" />
+  <rect class="duration2 delay6" x="24" y="24" width="8" height="8" />
+  <rect class="duration10 delay6" x="32" y="0" width="8" height="8" />
+  <rect class="duration2 delay4" x="40" y="0" width="8" height="8" />
+  <rect class="duration10 delay10" x="32" y="8" width="8" height="8" />
+  <rect class="duration10 delay5" x="40" y="8" width="8" height="8" />
+  <rect class="duration6 delay5" x="48" y="0" width="8" height="8" />
+  <rect class="duration8 delay10" x="56" y="0" width="8" height="8" />
+  <rect class="duration2 delay8" x="48" y="8" width="8" height="8" />
+  <rect class="duration5 delay7" x="56" y="8" width="8" height="8" />
+  <rect class="duration10 delay2" x="32" y="16" width="8" height="8" />
+  <rect class="duration10 delay1" x="40" y="16" width="8" height="8" />
+  <rect class="duration4 delay8" x="32" y="24" width="8" height="8" />
+  <rect class="duration4 delay3" x="40" y="24" width="8" height="8" />
+  <rect class="duration5 delay2" x="48" y="16" width="8" height="8" />
+  <rect class="duration4 delay6" x="56" y="16" width="8" height="8" />
+  <rect class="duration5 delay3" x="48" y="24" width="8" height="8" />
+  <rect class="duration8 delay10" x="56" y="24" width="8" height="8" />
+  <rect class="duration8 delay6" x="0" y="32" width="8" height="8" />
+  <rect class="duration5 delay1" x="8" y="32" width="8" height="8" />
+  <rect class="duration1 delay1" x="0" y="40" width="8" height="8" />
+  <rect class="duration5 delay4" x="8" y="40" width="8" height="8" />
+  <rect class="duration2 delay9" x="16" y="32" width="8" height="8" />
+  <rect class="duration8 delay2" x="24" y="32" width="8" height="8" />
+  <rect class="duration8 delay10" x="16" y="40" width="8" height="8" />
+  <rect class="duration6 delay7" x="24" y="40" width="8" height="8" />
+  <rect class="duration7 delay1" x="0" y="48" width="16" height="16" />
+  <rect class="duration3 delay2" x="16" y="48" width="8" height="8" />
+  <rect class="duration10 delay7" x="24" y="48" width="8" height="8" />
+  <rect class="duration2 delay6" x="16" y="56" width="8" height="8" />
+  <rect class="duration6 delay9" x="24" y="56" width="8" height="8" />
+  <rect class="duration3 delay4" x="32" y="32" width="16" height="16" />
+  <rect class="duration3 delay2" x="48" y="32" width="8" height="8" />
+  <rect class="duration6 delay10" x="56" y="32" width="8" height="8" />
+  <rect class="duration9 delay4" x="48" y="40" width="8" height="8" />
+  <rect class="duration9 delay1" x="56" y="40" width="8" height="8" />
+  <rect class="duration10 delay10" x="32" y="48" width="8" height="8" />
+  <rect class="duration5 delay6" x="40" y="48" width="8" height="8" />
+  <rect class="duration4 delay9" x="32" y="56" width="8" height="8" />
+  <rect class="duration5 delay2" x="40" y="56" width="8" height="8" />
+  <rect class="duration10 delay3" x="48" y="48" width="8" height="8" />
+  <rect class="duration4 delay10" x="56" y="48" width="8" height="8" />
+  <rect class="duration3 delay7" x="48" y="56" width="8" height="8" />
+  <rect class="duration5 delay7" x="56" y="56" width="8" height="8" />
+  <rect class="duration9 delay9" x="64" y="0" width="32" height="32" />
+  <rect class="duration6 delay8" x="96" y="0" width="32" height="32" />
+  <rect class="duration8 delay9" x="64" y="32" width="32" height="32" />
+  <rect class="duration6 delay8" x="96" y="32" width="8" height="8" />
+  <rect class="duration7 delay4" x="104" y="32" width="8" height="8" />
+  <rect class="duration7 delay1" x="96" y="40" width="8" height="8" />
+  <rect class="duration6 delay1" x="104" y="40" width="8" height="8" />
+  <rect class="duration10 delay9" x="112" y="32" width="8" height="8" />
+  <rect class="duration2 delay10" x="120" y="32" width="8" height="8" />
+  <rect class="duration7 delay3" x="112" y="40" width="8" height="8" />
+  <rect class="duration4 delay8" x="120" y="40" width="8" height="8" />
+  <rect class="duration9 delay6" x="96" y="48" width="16" height="16" />
+  <rect class="duration9 delay1" x="112" y="48" width="8" height="8" />
+  <rect class="duration8 delay3" x="120" y="48" width="8" height="8" />
+  <rect class="duration3 delay5" x="112" y="56" width="8" height="8" />
+  <rect class="duration8 delay3" x="120" y="56" width="8" height="8" />
+  <rect class="duration6 delay9" x="0" y="64" width="8" height="8" />
+  <rect class="duration9 delay1" x="8" y="64" width="8" height="8" />
+  <rect class="duration4 delay6" x="0" y="72" width="8" height="8" />
+  <rect class="duration4 delay2" x="8" y="72" width="8" height="8" />
+  <rect class="duration5 delay2" x="16" y="64" width="16" height="16" />
+  <rect class="duration10 delay9" x="0" y="80" width="8" height="8" />
+  <rect class="duration4 delay9" x="8" y="80" width="8" height="8" />
+  <rect class="duration1 delay10" x="0" y="88" width="8" height="8" />
+  <rect class="duration5 delay6" x="8" y="88" width="8" height="8" />
+  <rect class="duration8 delay3" x="16" y="80" width="8" height="8" />
+  <rect class="duration4 delay6" x="24" y="80" width="8" height="8" />
+  <rect class="duration6 delay10" x="16" y="88" width="8" height="8" />
+  <rect class="duration7 delay8" x="24" y="88" width="8" height="8" />
+  <rect class="duration7 delay3" x="32" y="64" width="32" height="32" />
+  <rect class="duration2 delay4" x="0" y="96" width="8" height="8" />
+  <rect class="duration4 delay4" x="8" y="96" width="8" height="8" />
+  <rect class="duration6 delay5" x="0" y="104" width="8" height="8" />
+  <rect class="duration10 delay6" x="8" y="104" width="8" height="8" />
+  <rect class="duration6 delay6" x="16" y="96" width="8" height="8" />
+  <rect class="duration8 delay4" x="24" y="96" width="8" height="8" />
+  <rect class="duration3 delay4" x="16" y="104" width="8" height="8" />
+  <rect class="duration10 delay10" x="24" y="104" width="8" height="8" />
+  <rect class="duration9 delay7" x="0" y="112" width="8" height="8" />
+  <rect class="duration4 delay6" x="8" y="112" width="8" height="8" />
+  <rect class="duration10 delay4" x="0" y="120" width="8" height="8" />
+  <rect class="duration3 delay4" x="8" y="120" width="8" height="8" />
+  <rect class="duration9 delay4" x="16" y="112" width="8" height="8" />
+  <rect class="duration3 delay7" x="24" y="112" width="8" height="8" />
+  <rect class="duration1 delay4" x="16" y="120" width="8" height="8" />
+  <rect class="duration4 delay10" x="24" y="120" width="8" height="8" />
+  <rect class="duration3 delay8" x="32" y="96" width="8" height="8" />
+  <rect class="duration3 delay3" x="40" y="96" width="8" height="8" />
+  <rect class="duration10 delay6" x="32" y="104" width="8" height="8" />
+  <rect class="duration8 delay2" x="40" y="104" width="8" height="8" />
+  <rect class="duration2 delay9" x="48" y="96" width="8" height="8" />
+  <rect class="duration5 delay5" x="56" y="96" width="8" height="8" />
+  <rect class="duration5 delay6" x="48" y="104" width="8" height="8" />
+  <rect class="duration3 delay7" x="56" y="104" width="8" height="8" />
+  <rect class="duration3 delay4" x="32" y="112" width="8" height="8" />
+  <rect class="duration2 delay5" x="40" y="112" width="8" height="8" />
+  <rect class="duration1 delay8" x="32" y="120" width="8" height="8" />
+  <rect class="duration6 delay1" x="40" y="120" width="8" height="8" />
+  <rect class="duration6 delay5" x="48" y="112" width="16" height="16" />
+  <rect class="duration6 delay4" x="64" y="64" width="16" height="16" />
+  <rect class="duration7 delay9" x="80" y="64" width="8" height="8" />
+  <rect class="duration3 delay1" x="88" y="64" width="8" height="8" />
+  <rect class="duration9 delay10" x="80" y="72" width="8" height="8" />
+  <rect class="duration5 delay5" x="88" y="72" width="8" height="8" />
+  <rect class="duration5 delay3" x="64" y="80" width="8" height="8" />
+  <rect class="duration9 delay5" x="72" y="80" width="8" height="8" />
+  <rect class="duration7 delay7" x="64" y="88" width="8" height="8" />
+  <rect class="duration8 delay10" x="72" y="88" width="8" height="8" />
+  <rect class="duration8 delay9" x="80" y="80" width="16" height="16" />
+  <rect class="duration2 delay1" x="96" y="64" width="32" height="32" />
+  <rect class="duration5 delay10" x="64" y="96" width="8" height="8" />
+  <rect class="duration8 delay10" x="72" y="96" width="8" height="8" />
+  <rect class="duration4 delay7" x="64" y="104" width="8" height="8" />
+  <rect class="duration6 delay9" x="72" y="104" width="8" height="8" />
+  <rect class="duration10 delay10" x="80" y="96" width="8" height="8" />
+  <rect class="duration1 delay7" x="88" y="96" width="8" height="8" />
+  <rect class="duration5 delay2" x="80" y="104" width="8" height="8" />
+  <rect class="duration3 delay9" x="88" y="104" width="8" height="8" />
+  <rect class="duration1 delay4" x="64" y="112" width="16" height="16" />
+  <rect class="duration7 delay8" x="80" y="112" width="16" height="16" />
+  <rect class="duration3 delay3" x="96" y="96" width="8" height="8" />
+  <rect class="duration10 delay6" x="104" y="96" width="8" height="8" />
+  <rect class="duration1 delay10" x="96" y="104" width="8" height="8" />
+  <rect class="duration4 delay9" x="104" y="104" width="8" height="8" />
+  <rect class="duration5 delay6" x="112" y="96" width="8" height="8" />
+  <rect class="duration2 delay10" x="120" y="96" width="8" height="8" />
+  <rect class="duration1 delay5" x="112" y="104" width="8" height="8" />
+  <rect class="duration6 delay2" x="120" y="104" width="8" height="8" />
+  <rect class="duration1 delay6" x="96" y="112" width="16" height="16" />
+  <rect class="duration2 delay8" x="112" y="112" width="8" height="8" />
+  <rect class="duration9 delay3" x="120" y="112" width="8" height="8" />
+  <rect class="duration8 delay6" x="112" y="120" width="8" height="8" />
+  <rect class="duration2 delay2" x="120" y="120" width="8" height="8" />
+  <rect class="duration3 delay8" x="128" y="0" width="8" height="8" />
+  <rect class="duration10 delay10" x="136" y="0" width="8" height="8" />
+  <rect class="duration2 delay9" x="128" y="8" width="8" height="8" />
+  <rect class="duration8 delay3" x="136" y="8" width="8" height="8" />
+  <rect class="duration5 delay3" x="144" y="0" width="8" height="8" />
+  <rect class="duration2 delay1" x="152" y="0" width="8" height="8" />
+  <rect class="duration5 delay10" x="144" y="8" width="8" height="8" />
+  <rect class="duration1 delay2" x="152" y="8" width="8" height="8" />
+  <rect class="duration4 delay2" x="128" y="16" width="8" height="8" />
+  <rect class="duration3 delay9" x="136" y="16" width="8" height="8" />
+  <rect class="duration8 delay5" x="128" y="24" width="8" height="8" />
+  <rect class="duration3 delay9" x="136" y="24" width="8" height="8" />
+  <rect class="duration8 delay1" x="144" y="16" width="8" height="8" />
+  <rect class="duration5 delay7" x="152" y="16" width="8" height="8" />
+  <rect class="duration1 delay6" x="144" y="24" width="8" height="8" />
+  <rect class="duration9 delay4" x="152" y="24" width="8" height="8" />
+  <rect class="duration9 delay5" x="160" y="0" width="32" height="32" />
+  <rect class="duration8 delay8" x="128" y="32" width="8" height="8" />
+  <rect class="duration1 delay3" x="136" y="32" width="8" height="8" />
+  <rect class="duration8 delay1" x="128" y="40" width="8" height="8" />
+  <rect class="duration5 delay9" x="136" y="40" width="8" height="8" />
+  <rect class="duration4 delay2" x="144" y="32" width="8" height="8" />
+  <rect class="duration8 delay3" x="152" y="32" width="8" height="8" />
+  <rect class="duration10 delay4" x="144" y="40" width="8" height="8" />
+  <rect class="duration4 delay2" x="152" y="40" width="8" height="8" />
+  <rect class="duration9 delay8" x="128" y="48" width="8" height="8" />
+  <rect class="duration10 delay8" x="136" y="48" width="8" height="8" />
+  <rect class="duration2 delay5" x="128" y="56" width="8" height="8" />
+  <rect class="duration10 delay1" x="136" y="56" width="8" height="8" />
+  <rect class="duration6 delay7" x="144" y="48" width="16" height="16" />
+  <rect class="duration1 delay1" x="160" y="32" width="8" height="8" />
+  <rect class="duration2 delay4" x="168" y="32" width="8" height="8" />
+  <rect class="duration6 delay5" x="160" y="40" width="8" height="8" />
+  <rect class="duration5 delay2" x="168" y="40" width="8" height="8" />
+  <rect class="duration5 delay5" x="176" y="32" width="8" height="8" />
+  <rect class="duration6 delay7" x="184" y="32" width="8" height="8" />
+  <rect class="duration5 delay6" x="176" y="40" width="8" height="8" />
+  <rect class="duration8 delay2" x="184" y="40" width="8" height="8" />
+  <rect class="duration2 delay1" x="160" y="48" width="8" height="8" />
+  <rect class="duration2 delay4" x="168" y="48" width="8" height="8" />
+  <rect class="duration1 delay4" x="160" y="56" width="8" height="8" />
+  <rect class="duration6 delay5" x="168" y="56" width="8" height="8" />
+  <rect class="duration1 delay8" x="176" y="48" width="8" height="8" />
+  <rect class="duration7 delay4" x="184" y="48" width="8" height="8" />
+  <rect class="duration4 delay8" x="176" y="56" width="8" height="8" />
+  <rect class="duration4 delay8" x="184" y="56" width="8" height="8" />
+  <rect class="duration5 delay5" x="192" y="0" width="8" height="8" />
+  <rect class="duration4 delay3" x="200" y="0" width="8" height="8" />
+  <rect class="duration1 delay5" x="192" y="8" width="8" height="8" />
+  <rect class="duration4 delay8" x="200" y="8" width="8" height="8" />
+  <rect class="duration2 delay4" x="208" y="0" width="16" height="16" />
+  <rect class="duration3 delay7" x="192" y="16" width="8" height="8" />
+  <rect class="duration7 delay8" x="200" y="16" width="8" height="8" />
+  <rect class="duration4 delay4" x="192" y="24" width="8" height="8" />
+  <rect class="duration1 delay9" x="200" y="24" width="8" height="8" />
+  <rect class="duration3 delay10" x="208" y="16" width="8" height="8" />
+  <rect class="duration6 delay9" x="216" y="16" width="8" height="8" />
+  <rect class="duration7 delay10" x="208" y="24" width="8" height="8" />
+  <rect class="duration5 delay1" x="216" y="24" width="8" height="8" />
+  <rect class="duration9 delay7" x="224" y="0" width="8" height="8" />
+  <rect class="duration6 delay6" x="232" y="0" width="8" height="8" />
+  <rect class="duration6 delay10" x="224" y="8" width="8" height="8" />
+  <rect class="duration5 delay5" x="232" y="8" width="8" height="8" />
+  <rect class="duration2 delay10" x="240" y="0" width="8" height="8" />
+  <rect class="duration7 delay9" x="248" y="0" width="8" height="8" />
+  <rect class="duration4 delay7" x="240" y="8" width="8" height="8" />
+  <rect class="duration4 delay6" x="248" y="8" width="8" height="8" />
+  <rect class="duration1 delay8" x="224" y="16" width="8" height="8" />
+  <rect class="duration3 delay5" x="232" y="16" width="8" height="8" />
+  <rect class="duration8 delay9" x="224" y="24" width="8" height="8" />
+  <rect class="duration7 delay5" x="232" y="24" width="8" height="8" />
+  <rect class="duration4 delay1" x="240" y="16" width="16" height="16" />
+  <rect class="duration7 delay8" x="192" y="32" width="32" height="32" />
+  <rect class="duration1 delay5" x="224" y="32" width="16" height="16" />
+  <rect class="duration10 delay9" x="240" y="32" width="8" height="8" />
+  <rect class="duration10 delay7" x="248" y="32" width="8" height="8" />
+  <rect class="duration8 delay9" x="240" y="40" width="8" height="8" />
+  <rect class="duration10 delay4" x="248" y="40" width="8" height="8" />
+  <rect class="duration4 delay6" x="224" y="48" width="8" height="8" />
+  <rect class="duration8 delay4" x="232" y="48" width="8" height="8" />
+  <rect class="duration1 delay4" x="224" y="56" width="8" height="8" />
+  <rect class="duration1 delay2" x="232" y="56" width="8" height="8" />
+  <rect class="duration1 delay4" x="240" y="48" width="16" height="16" />
+  <rect class="duration2 delay5" x="128" y="64" width="8" height="8" />
+  <rect class="duration2 delay8" x="136" y="64" width="8" height="8" />
+  <rect class="duration4 delay10" x="128" y="72" width="8" height="8" />
+  <rect class="duration2 delay6" x="136" y="72" width="8" height="8" />
+  <rect class="duration10 delay3" x="144" y="64" width="8" height="8" />
+  <rect class="duration2 delay8" x="152" y="64" width="8" height="8" />
+  <rect class="duration1 delay6" x="144" y="72" width="8" height="8" />
+  <rect class="duration5 delay8" x="152" y="72" width="8" height="8" />
+  <rect class="duration8 delay5" x="128" y="80" width="8" height="8" />
+  <rect class="duration8 delay8" x="136" y="80" width="8" height="8" />
+  <rect class="duration3 delay4" x="128" y="88" width="8" height="8" />
+  <rect class="duration3 delay4" x="136" y="88" width="8" height="8" />
+  <rect class="duration8 delay3" x="144" y="80" width="8" height="8" />
+  <rect class="duration8 delay6" x="152" y="80" width="8" height="8" />
+  <rect class="duration10 delay8" x="144" y="88" width="8" height="8" />
+  <rect class="duration10 delay8" x="152" y="88" width="8" height="8" />
+  <rect class="duration3 delay2" x="160" y="64" width="32" height="32" />
+  <rect class="duration7 delay6" x="128" y="96" width="8" height="8" />
+  <rect class="duration9 delay2" x="136" y="96" width="8" height="8" />
+  <rect class="duration6 delay7" x="128" y="104" width="8" height="8" />
+  <rect class="duration7 delay6" x="136" y="104" width="8" height="8" />
+  <rect class="duration7 delay1" x="144" y="96" width="8" height="8" />
+  <rect class="duration3 delay1" x="152" y="96" width="8" height="8" />
+  <rect class="duration3 delay4" x="144" y="104" width="8" height="8" />
+  <rect class="duration4 delay4" x="152" y="104" width="8" height="8" />
+  <rect class="duration5 delay1" x="128" y="112" width="8" height="8" />
+  <rect class="duration4 delay4" x="136" y="112" width="8" height="8" />
+  <rect class="duration2 delay10" x="128" y="120" width="8" height="8" />
+  <rect class="duration9 delay8" x="136" y="120" width="8" height="8" />
+  <rect class="duration1 delay5" x="144" y="112" width="8" height="8" />
+  <rect class="duration9 delay9" x="152" y="112" width="8" height="8" />
+  <rect class="duration7 delay10" x="144" y="120" width="8" height="8" />
+  <rect class="duration7 delay3" x="152" y="120" width="8" height="8" />
+  <rect class="duration10 delay9" x="160" y="96" width="8" height="8" />
+  <rect class="duration4 delay2" x="168" y="96" width="8" height="8" />
+  <rect class="duration2 delay8" x="160" y="104" width="8" height="8" />
+  <rect class="duration7 delay8" x="168" y="104" width="8" height="8" />
+  <rect class="duration7 delay6" x="176" y="96" width="16" height="16" />
+  <rect class="duration4 delay4" x="160" y="112" width="8" height="8" />
+  <rect class="duration9 delay2" x="168" y="112" width="8" height="8" />
+  <rect class="duration7 delay10" x="160" y="120" width="8" height="8" />
+  <rect class="duration10 delay6" x="168" y="120" width="8" height="8" />
+  <rect class="duration9 delay7" x="176" y="112" width="8" height="8" />
+  <rect class="duration9 delay10" x="184" y="112" width="8" height="8" />
+  <rect class="duration10 delay4" x="176" y="120" width="8" height="8" />
+  <rect class="duration6 delay8" x="184" y="120" width="8" height="8" />
+  <rect class="duration4 delay7" x="192" y="64" width="32" height="32" />
+  <rect class="duration1 delay5" x="224" y="64" width="32" height="32" />
+  <rect class="duration1 delay8" x="192" y="96" width="8" height="8" />
+  <rect class="duration9 delay9" x="200" y="96" width="8" height="8" />
+  <rect class="duration7 delay1" x="192" y="104" width="8" height="8" />
+  <rect class="duration8 delay6" x="200" y="104" width="8" height="8" />
+  <rect class="duration6 delay2" x="208" y="96" width="8" height="8" />
+  <rect class="duration6 delay8" x="216" y="96" width="8" height="8" />
+  <rect class="duration7 delay7" x="208" y="104" width="8" height="8" />
+  <rect class="duration3 delay5" x="216" y="104" width="8" height="8" />
+  <rect class="duration8 delay4" x="192" y="112" width="8" height="8" />
+  <rect class="duration5 delay5" x="200" y="112" width="8" height="8" />
+  <rect class="duration8 delay10" x="192" y="120" width="8" height="8" />
+  <rect class="duration10 delay6" x="200" y="120" width="8" height="8" />
+  <rect class="duration1 delay3" x="208" y="112" width="16" height="16" />
+  <rect class="duration9 delay6" x="224" y="96" width="32" height="32" />
+  <rect class="duration2 delay5" x="0" y="128" width="16" height="16" />
+  <rect class="duration10 delay10" x="16" y="128" width="8" height="8" />
+  <rect class="duration5 delay8" x="24" y="128" width="8" height="8" />
+  <rect class="duration4 delay10" x="16" y="136" width="8" height="8" />
+  <rect class="duration8 delay7" x="24" y="136" width="8" height="8" />
+  <rect class="duration2 delay10" x="0" y="144" width="8" height="8" />
+  <rect class="duration5 delay7" x="8" y="144" width="8" height="8" />
+  <rect class="duration2 delay4" x="0" y="152" width="8" height="8" />
+  <rect class="duration10 delay5" x="8" y="152" width="8" height="8" />
+  <rect class="duration9 delay9" x="16" y="144" width="16" height="16" />
+  <rect class="duration6 delay6" x="32" y="128" width="8" height="8" />
+  <rect class="duration4 delay8" x="40" y="128" width="8" height="8" />
+  <rect class="duration2 delay1" x="32" y="136" width="8" height="8" />
+  <rect class="duration10 delay5" x="40" y="136" width="8" height="8" />
+  <rect class="duration4 delay5" x="48" y="128" width="8" height="8" />
+  <rect class="duration7 delay9" x="56" y="128" width="8" height="8" />
+  <rect class="duration1 delay8" x="48" y="136" width="8" height="8" />
+  <rect class="duration9 delay8" x="56" y="136" width="8" height="8" />
+  <rect class="duration8 delay1" x="32" y="144" width="16" height="16" />
+  <rect class="duration8 delay4" x="48" y="144" width="8" height="8" />
+  <rect class="duration1 delay7" x="56" y="144" width="8" height="8" />
+  <rect class="duration10 delay2" x="48" y="152" width="8" height="8" />
+  <rect class="duration10 delay9" x="56" y="152" width="8" height="8" />
+  <rect class="duration3 delay1" x="0" y="160" width="16" height="16" />
+  <rect class="duration3 delay4" x="16" y="160" width="8" height="8" />
+  <rect class="duration9 delay2" x="24" y="160" width="8" height="8" />
+  <rect class="duration7 delay10" x="16" y="168" width="8" height="8" />
+  <rect class="duration1 delay2" x="24" y="168" width="8" height="8" />
+  <rect class="duration8 delay2" x="0" y="176" width="8" height="8" />
+  <rect class="duration5 delay7" x="8" y="176" width="8" height="8" />
+  <rect class="duration5 delay6" x="0" y="184" width="8" height="8" />
+  <rect class="duration6 delay5" x="8" y="184" width="8" height="8" />
+  <rect class="duration5 delay7" x="16" y="176" width="8" height="8" />
+  <rect class="duration9 delay1" x="24" y="176" width="8" height="8" />
+  <rect class="duration3 delay5" x="16" y="184" width="8" height="8" />
+  <rect class="duration1 delay8" x="24" y="184" width="8" height="8" />
+  <rect class="duration5 delay1" x="32" y="160" width="8" height="8" />
+  <rect class="duration5 delay3" x="40" y="160" width="8" height="8" />
+  <rect class="duration1 delay2" x="32" y="168" width="8" height="8" />
+  <rect class="duration6 delay8" x="40" y="168" width="8" height="8" />
+  <rect class="duration2 delay5" x="48" y="160" width="16" height="16" />
+  <rect class="duration8 delay3" x="32" y="176" width="8" height="8" />
+  <rect class="duration9 delay5" x="40" y="176" width="8" height="8" />
+  <rect class="duration2 delay7" x="32" y="184" width="8" height="8" />
+  <rect class="duration4 delay6" x="40" y="184" width="8" height="8" />
+  <rect class="duration1 delay1" x="48" y="176" width="8" height="8" />
+  <rect class="duration9 delay2" x="56" y="176" width="8" height="8" />
+  <rect class="duration10 delay10" x="48" y="184" width="8" height="8" />
+  <rect class="duration6 delay5" x="56" y="184" width="8" height="8" />
+  <rect class="duration5 delay2" x="64" y="128" width="8" height="8" />
+  <rect class="duration2 delay9" x="72" y="128" width="8" height="8" />
+  <rect class="duration10 delay10" x="64" y="136" width="8" height="8" />
+  <rect class="duration7 delay3" x="72" y="136" width="8" height="8" />
+  <rect class="duration1 delay4" x="80" y="128" width="8" height="8" />
+  <rect class="duration6 delay7" x="88" y="128" width="8" height="8" />
+  <rect class="duration1 delay7" x="80" y="136" width="8" height="8" />
+  <rect class="duration4 delay2" x="88" y="136" width="8" height="8" />
+  <rect class="duration7 delay2" x="64" y="144" width="8" height="8" />
+  <rect class="duration1 delay6" x="72" y="144" width="8" height="8" />
+  <rect class="duration1 delay10" x="64" y="152" width="8" height="8" />
+  <rect class="duration6 delay2" x="72" y="152" width="8" height="8" />
+  <rect class="duration9 delay2" x="80" y="144" width="16" height="16" />
+  <rect class="duration4 delay8" x="96" y="128" width="8" height="8" />
+  <rect class="duration7 delay3" x="104" y="128" width="8" height="8" />
+  <rect class="duration4 delay9" x="96" y="136" width="8" height="8" />
+  <rect class="duration8 delay5" x="104" y="136" width="8" height="8" />
+  <rect class="duration5 delay10" x="112" y="128" width="8" height="8" />
+  <rect class="duration1 delay3" x="120" y="128" width="8" height="8" />
+  <rect class="duration10 delay6" x="112" y="136" width="8" height="8" />
+  <rect class="duration1 delay9" x="120" y="136" width="8" height="8" />
+  <rect class="duration3 delay9" x="96" y="144" width="8" height="8" />
+  <rect class="duration2 delay10" x="104" y="144" width="8" height="8" />
+  <rect class="duration5 delay8" x="96" y="152" width="8" height="8" />
+  <rect class="duration5 delay6" x="104" y="152" width="8" height="8" />
+  <rect class="duration7 delay10" x="112" y="144" width="8" height="8" />
+  <rect class="duration6 delay5" x="120" y="144" width="8" height="8" />
+  <rect class="duration7 delay6" x="112" y="152" width="8" height="8" />
+  <rect class="duration6 delay8" x="120" y="152" width="8" height="8" />
+  <rect class="duration9 delay8" x="64" y="160" width="8" height="8" />
+  <rect class="duration10 delay10" x="72" y="160" width="8" height="8" />
+  <rect class="duration2 delay9" x="64" y="168" width="8" height="8" />
+  <rect class="duration6 delay4" x="72" y="168" width="8" height="8" />
+  <rect class="duration5 delay1" x="80" y="160" width="8" height="8" />
+  <rect class="duration5 delay8" x="88" y="160" width="8" height="8" />
+  <rect class="duration4 delay8" x="80" y="168" width="8" height="8" />
+  <rect class="duration9 delay1" x="88" y="168" width="8" height="8" />
+  <rect class="duration7 delay3" x="64" y="176" width="8" height="8" />
+  <rect class="duration1 delay9" x="72" y="176" width="8" height="8" />
+  <rect class="duration8 delay7" x="64" y="184" width="8" height="8" />
+  <rect class="duration5 delay5" x="72" y="184" width="8" height="8" />
+  <rect class="duration6 delay2" x="80" y="176" width="8" height="8" />
+  <rect class="duration2 delay2" x="88" y="176" width="8" height="8" />
+  <rect class="duration7 delay2" x="80" y="184" width="8" height="8" />
+  <rect class="duration7 delay5" x="88" y="184" width="8" height="8" />
+  <rect class="duration5 delay8" x="96" y="160" width="8" height="8" />
+  <rect class="duration7 delay9" x="104" y="160" width="8" height="8" />
+  <rect class="duration10 delay4" x="96" y="168" width="8" height="8" />
+  <rect class="duration10 delay8" x="104" y="168" width="8" height="8" />
+  <rect class="duration6 delay2" x="112" y="160" width="8" height="8" />
+  <rect class="duration8 delay7" x="120" y="160" width="8" height="8" />
+  <rect class="duration2 delay5" x="112" y="168" width="8" height="8" />
+  <rect class="duration6 delay9" x="120" y="168" width="8" height="8" />
+  <rect class="duration8 delay4" x="96" y="176" width="16" height="16" />
+  <rect class="duration6 delay2" x="112" y="176" width="8" height="8" />
+  <rect class="duration1 delay10" x="120" y="176" width="8" height="8" />
+  <rect class="duration6 delay5" x="112" y="184" width="8" height="8" />
+  <rect class="duration8 delay9" x="120" y="184" width="8" height="8" />
+  <rect class="duration3 delay9" x="0" y="192" width="8" height="8" />
+  <rect class="duration5 delay1" x="8" y="192" width="8" height="8" />
+  <rect class="duration5 delay6" x="0" y="200" width="8" height="8" />
+  <rect class="duration10 delay6" x="8" y="200" width="8" height="8" />
+  <rect class="duration5 delay7" x="16" y="192" width="8" height="8" />
+  <rect class="duration7 delay10" x="24" y="192" width="8" height="8" />
+  <rect class="duration3 delay1" x="16" y="200" width="8" height="8" />
+  <rect class="duration2 delay2" x="24" y="200" width="8" height="8" />
+  <rect class="duration10 delay3" x="0" y="208" width="8" height="8" />
+  <rect class="duration5 delay5" x="8" y="208" width="8" height="8" />
+  <rect class="duration2 delay6" x="0" y="216" width="8" height="8" />
+  <rect class="duration4 delay4" x="8" y="216" width="8" height="8" />
+  <rect class="duration5 delay7" x="16" y="208" width="8" height="8" />
+  <rect class="duration2 delay10" x="24" y="208" width="8" height="8" />
+  <rect class="duration8 delay10" x="16" y="216" width="8" height="8" />
+  <rect class="duration2 delay9" x="24" y="216" width="8" height="8" />
+  <rect class="duration8 delay8" x="32" y="192" width="8" height="8" />
+  <rect class="duration6 delay1" x="40" y="192" width="8" height="8" />
+  <rect class="duration6 delay5" x="32" y="200" width="8" height="8" />
+  <rect class="duration10 delay3" x="40" y="200" width="8" height="8" />
+  <rect class="duration5 delay9" x="48" y="192" width="8" height="8" />
+  <rect class="duration2 delay10" x="56" y="192" width="8" height="8" />
+  <rect class="duration7 delay2" x="48" y="200" width="8" height="8" />
+  <rect class="duration4 delay5" x="56" y="200" width="8" height="8" />
+  <rect class="duration6 delay9" x="32" y="208" width="8" height="8" />
+  <rect class="duration7 delay2" x="40" y="208" width="8" height="8" />
+  <rect class="duration5 delay5" x="32" y="216" width="8" height="8" />
+  <rect class="duration2 delay3" x="40" y="216" width="8" height="8" />
+  <rect class="duration9 delay1" x="48" y="208" width="16" height="16" />
+  <rect class="duration4 delay8" x="0" y="224" width="8" height="8" />
+  <rect class="duration8 delay1" x="8" y="224" width="8" height="8" />
+  <rect class="duration2 delay7" x="0" y="232" width="8" height="8" />
+  <rect class="duration7 delay1" x="8" y="232" width="8" height="8" />
+  <rect class="duration2 delay1" x="16" y="224" width="8" height="8" />
+  <rect class="duration9 delay1" x="24" y="224" width="8" height="8" />
+  <rect class="duration1 delay10" x="16" y="232" width="8" height="8" />
+  <rect class="duration2 delay7" x="24" y="232" width="8" height="8" />
+  <rect class="duration9 delay7" x="0" y="240" width="8" height="8" />
+  <rect class="duration8 delay9" x="8" y="240" width="8" height="8" />
+  <rect class="duration9 delay5" x="0" y="248" width="8" height="8" />
+  <rect class="duration5 delay2" x="8" y="248" width="8" height="8" />
+  <rect class="duration6 delay6" x="16" y="240" width="8" height="8" />
+  <rect class="duration2 delay7" x="24" y="240" width="8" height="8" />
+  <rect class="duration3 delay9" x="16" y="248" width="8" height="8" />
+  <rect class="duration9 delay3" x="24" y="248" width="8" height="8" />
+  <rect class="duration6 delay4" x="32" y="224" width="32" height="32" />
+  <rect class="duration8 delay2" x="64" y="192" width="32" height="32" />
+  <rect class="duration10 delay4" x="96" y="192" width="16" height="16" />
+  <rect class="duration6 delay4" x="112" y="192" width="8" height="8" />
+  <rect class="duration3 delay2" x="120" y="192" width="8" height="8" />
+  <rect class="duration8 delay6" x="112" y="200" width="8" height="8" />
+  <rect class="duration4 delay4" x="120" y="200" width="8" height="8" />
+  <rect class="duration1 delay5" x="96" y="208" width="8" height="8" />
+  <rect class="duration1 delay2" x="104" y="208" width="8" height="8" />
+  <rect class="duration8 delay10" x="96" y="216" width="8" height="8" />
+  <rect class="duration1 delay3" x="104" y="216" width="8" height="8" />
+  <rect class="duration2 delay8" x="112" y="208" width="16" height="16" />
+  <rect class="duration1 delay10" x="64" y="224" width="8" height="8" />
+  <rect class="duration3 delay3" x="72" y="224" width="8" height="8" />
+  <rect class="duration9 delay10" x="64" y="232" width="8" height="8" />
+  <rect class="duration3 delay6" x="72" y="232" width="8" height="8" />
+  <rect class="duration7 delay7" x="80" y="224" width="8" height="8" />
+  <rect class="duration10 delay2" x="88" y="224" width="8" height="8" />
+  <rect class="duration2 delay8" x="80" y="232" width="8" height="8" />
+  <rect class="duration3 delay2" x="88" y="232" width="8" height="8" />
+  <rect class="duration10 delay7" x="64" y="240" width="8" height="8" />
+  <rect class="duration6 delay2" x="72" y="240" width="8" height="8" />
+  <rect class="duration5 delay6" x="64" y="248" width="8" height="8" />
+  <rect class="duration6 delay8" x="72" y="248" width="8" height="8" />
+  <rect class="duration5 delay4" x="80" y="240" width="8" height="8" />
+  <rect class="duration2 delay5" x="88" y="240" width="8" height="8" />
+  <rect class="duration9 delay10" x="80" y="248" width="8" height="8" />
+  <rect class="duration2 delay9" x="88" y="248" width="8" height="8" />
+  <rect class="duration9 delay8" x="96" y="224" width="8" height="8" />
+  <rect class="duration10 delay10" x="104" y="224" width="8" height="8" />
+  <rect class="duration1 delay8" x="96" y="232" width="8" height="8" />
+  <rect class="duration6 delay6" x="104" y="232" width="8" height="8" />
+  <rect class="duration3 delay10" x="112" y="224" width="8" height="8" />
+  <rect class="duration10 delay6" x="120" y="224" width="8" height="8" />
+  <rect class="duration10 delay8" x="112" y="232" width="8" height="8" />
+  <rect class="duration9 delay10" x="120" y="232" width="8" height="8" />
+  <rect class="duration9 delay4" x="96" y="240" width="16" height="16" />
+  <rect class="duration9 delay10" x="112" y="240" width="8" height="8" />
+  <rect class="duration10 delay10" x="120" y="240" width="8" height="8" />
+  <rect class="duration6 delay9" x="112" y="248" width="8" height="8" />
+  <rect class="duration3 delay1" x="120" y="248" width="8" height="8" />
+  <rect class="duration7 delay6" x="128" y="128" width="8" height="8" />
+  <rect class="duration10 delay9" x="136" y="128" width="8" height="8" />
+  <rect class="duration3 delay5" x="128" y="136" width="8" height="8" />
+  <rect class="duration9 delay2" x="136" y="136" width="8" height="8" />
+  <rect class="duration7 delay5" x="144" y="128" width="16" height="16" />
+  <rect class="duration5 delay9" x="128" y="144" width="8" height="8" />
+  <rect class="duration3 delay7" x="136" y="144" width="8" height="8" />
+  <rect class="duration2 delay9" x="128" y="152" width="8" height="8" />
+  <rect class="duration9 delay3" x="136" y="152" width="8" height="8" />
+  <rect class="duration5 delay6" x="144" y="144" width="8" height="8" />
+  <rect class="duration5 delay5" x="152" y="144" width="8" height="8" />
+  <rect class="duration9 delay10" x="144" y="152" width="8" height="8" />
+  <rect class="duration7 delay2" x="152" y="152" width="8" height="8" />
+  <rect class="duration6 delay1" x="160" y="128" width="8" height="8" />
+  <rect class="duration5 delay9" x="168" y="128" width="8" height="8" />
+  <rect class="duration8 delay7" x="160" y="136" width="8" height="8" />
+  <rect class="duration3 delay6" x="168" y="136" width="8" height="8" />
+  <rect class="duration5 delay2" x="176" y="128" width="8" height="8" />
+  <rect class="duration3 delay10" x="184" y="128" width="8" height="8" />
+  <rect class="duration1 delay3" x="176" y="136" width="8" height="8" />
+  <rect class="duration2 delay5" x="184" y="136" width="8" height="8" />
+  <rect class="duration1 delay4" x="160" y="144" width="8" height="8" />
+  <rect class="duration8 delay5" x="168" y="144" width="8" height="8" />
+  <rect class="duration10 delay10" x="160" y="152" width="8" height="8" />
+  <rect class="duration8 delay7" x="168" y="152" width="8" height="8" />
+  <rect class="duration8 delay5" x="176" y="144" width="8" height="8" />
+  <rect class="duration3 delay10" x="184" y="144" width="8" height="8" />
+  <rect class="duration9 delay3" x="176" y="152" width="8" height="8" />
+  <rect class="duration9 delay3" x="184" y="152" width="8" height="8" />
+  <rect class="duration4 delay8" x="128" y="160" width="8" height="8" />
+  <rect class="duration10 delay2" x="136" y="160" width="8" height="8" />
+  <rect class="duration2 delay10" x="128" y="168" width="8" height="8" />
+  <rect class="duration8 delay3" x="136" y="168" width="8" height="8" />
+  <rect class="duration2 delay5" x="144" y="160" width="8" height="8" />
+  <rect class="duration3 delay3" x="152" y="160" width="8" height="8" />
+  <rect class="duration4 delay10" x="144" y="168" width="8" height="8" />
+  <rect class="duration8 delay7" x="152" y="168" width="8" height="8" />
+  <rect class="duration1 delay10" x="128" y="176" width="16" height="16" />
+  <rect class="duration10 delay9" x="144" y="176" width="8" height="8" />
+  <rect class="duration9 delay9" x="152" y="176" width="8" height="8" />
+  <rect class="duration3 delay6" x="144" y="184" width="8" height="8" />
+  <rect class="duration1 delay3" x="152" y="184" width="8" height="8" />
+  <rect class="duration6 delay8" x="160" y="160" width="8" height="8" />
+  <rect class="duration8 delay7" x="168" y="160" width="8" height="8" />
+  <rect class="duration3 delay9" x="160" y="168" width="8" height="8" />
+  <rect class="duration6 delay1" x="168" y="168" width="8" height="8" />
+  <rect class="duration8 delay2" x="176" y="160" width="8" height="8" />
+  <rect class="duration2 delay8" x="184" y="160" width="8" height="8" />
+  <rect class="duration10 delay1" x="176" y="168" width="8" height="8" />
+  <rect class="duration9 delay8" x="184" y="168" width="8" height="8" />
+  <rect class="duration5 delay4" x="160" y="176" width="8" height="8" />
+  <rect class="duration5 delay5" x="168" y="176" width="8" height="8" />
+  <rect class="duration9 delay3" x="160" y="184" width="8" height="8" />
+  <rect class="duration10 delay10" x="168" y="184" width="8" height="8" />
+  <rect class="duration5 delay6" x="176" y="176" width="16" height="16" />
+  <rect class="duration3 delay2" x="192" y="128" width="32" height="32" />
+  <rect class="duration8 delay1" x="224" y="128" width="16" height="16" />
+  <rect class="duration7 delay10" x="240" y="128" width="8" height="8" />
+  <rect class="duration9 delay2" x="248" y="128" width="8" height="8" />
+  <rect class="duration3 delay2" x="240" y="136" width="8" height="8" />
+  <rect class="duration3 delay9" x="248" y="136" width="8" height="8" />
+  <rect class="duration5 delay5" x="224" y="144" width="8" height="8" />
+  <rect class="duration6 delay2" x="232" y="144" width="8" height="8" />
+  <rect class="duration5 delay9" x="224" y="152" width="8" height="8" />
+  <rect class="duration6 delay1" x="232" y="152" width="8" height="8" />
+  <rect class="duration5 delay2" x="240" y="144" width="8" height="8" />
+  <rect class="duration8 delay1" x="248" y="144" width="8" height="8" />
+  <rect class="duration7 delay3" x="240" y="152" width="8" height="8" />
+  <rect class="duration5 delay10" x="248" y="152" width="8" height="8" />
+  <rect class="duration9 delay7" x="192" y="160" width="8" height="8" />
+  <rect class="duration1 delay2" x="200" y="160" width="8" height="8" />
+  <rect class="duration9 delay5" x="192" y="168" width="8" height="8" />
+  <rect class="duration5 delay1" x="200" y="168" width="8" height="8" />
+  <rect class="duration8 delay7" x="208" y="160" width="8" height="8" />
+  <rect class="duration8 delay6" x="216" y="160" width="8" height="8" />
+  <rect class="duration6 delay7" x="208" y="168" width="8" height="8" />
+  <rect class="duration7 delay5" x="216" y="168" width="8" height="8" />
+  <rect class="duration9 delay10" x="192" y="176" width="8" height="8" />
+  <rect class="duration2 delay10" x="200" y="176" width="8" height="8" />
+  <rect class="duration9 delay2" x="192" y="184" width="8" height="8" />
+  <rect class="duration2 delay3" x="200" y="184" width="8" height="8" />
+  <rect class="duration4 delay8" x="208" y="176" width="8" height="8" />
+  <rect class="duration5 delay5" x="216" y="176" width="8" height="8" />
+  <rect class="duration6 delay4" x="208" y="184" width="8" height="8" />
+  <rect class="duration1 delay1" x="216" y="184" width="8" height="8" />
+  <rect class="duration3 delay6" x="224" y="160" width="16" height="16" />
+  <rect class="duration7 delay7" x="240" y="160" width="16" height="16" />
+  <rect class="duration10 delay3" x="224" y="176" width="16" height="16" />
+  <rect class="duration8 delay7" x="240" y="176" width="8" height="8" />
+  <rect class="duration8 delay1" x="248" y="176" width="8" height="8" />
+  <rect class="duration1 delay4" x="240" y="184" width="8" height="8" />
+  <rect class="duration5 delay5" x="248" y="184" width="8" height="8" />
+  <rect class="duration8 delay5" x="128" y="192" width="32" height="32" />
+  <rect class="duration6 delay5" x="160" y="192" width="16" height="16" />
+  <rect class="duration5 delay2" x="176" y="192" width="8" height="8" />
+  <rect class="duration3 delay8" x="184" y="192" width="8" height="8" />
+  <rect class="duration8 delay1" x="176" y="200" width="8" height="8" />
+  <rect class="duration2 delay1" x="184" y="200" width="8" height="8" />
+  <rect class="duration1 delay8" x="160" y="208" width="16" height="16" />
+  <rect class="duration7 delay8" x="176" y="208" width="8" height="8" />
+  <rect class="duration8 delay7" x="184" y="208" width="8" height="8" />
+  <rect class="duration7 delay8" x="176" y="216" width="8" height="8" />
+  <rect class="duration6 delay7" x="184" y="216" width="8" height="8" />
+  <rect class="duration3 delay2" x="128" y="224" width="8" height="8" />
+  <rect class="duration7 delay1" x="136" y="224" width="8" height="8" />
+  <rect class="duration6 delay10" x="128" y="232" width="8" height="8" />
+  <rect class="duration1 delay8" x="136" y="232" width="8" height="8" />
+  <rect class="duration2 delay7" x="144" y="224" width="8" height="8" />
+  <rect class="duration5 delay7" x="152" y="224" width="8" height="8" />
+  <rect class="duration8 delay8" x="144" y="232" width="8" height="8" />
+  <rect class="duration9 delay9" x="152" y="232" width="8" height="8" />
+  <rect class="duration8 delay1" x="128" y="240" width="16" height="16" />
+  <rect class="duration7 delay1" x="144" y="240" width="8" height="8" />
+  <rect class="duration10 delay9" x="152" y="240" width="8" height="8" />
+  <rect class="duration10 delay1" x="144" y="248" width="8" height="8" />
+  <rect class="duration1 delay10" x="152" y="248" width="8" height="8" />
+  <rect class="duration5 delay9" x="160" y="224" width="16" height="16" />
+  <rect class="duration7 delay6" x="176" y="224" width="8" height="8" />
+  <rect class="duration6 delay9" x="184" y="224" width="8" height="8" />
+  <rect class="duration5 delay10" x="176" y="232" width="8" height="8" />
+  <rect class="duration8 delay4" x="184" y="232" width="8" height="8" />
+  <rect class="duration4 delay7" x="160" y="240" width="8" height="8" />
+  <rect class="duration3 delay10" x="168" y="240" width="8" height="8" />
+  <rect class="duration10 delay10" x="160" y="248" width="8" height="8" />
+  <rect class="duration3 delay1" x="168" y="248" width="8" height="8" />
+  <rect class="duration8 delay3" x="176" y="240" width="8" height="8" />
+  <rect class="duration8 delay9" x="184" y="240" width="8" height="8" />
+  <rect class="duration2 delay6" x="176" y="248" width="8" height="8" />
+  <rect class="duration10 delay7" x="184" y="248" width="8" height="8" />
+  <rect class="duration9 delay2" x="192" y="192" width="8" height="8" />
+  <rect class="duration8 delay7" x="200" y="192" width="8" height="8" />
+  <rect class="duration7 delay6" x="192" y="200" width="8" height="8" />
+  <rect class="duration10 delay6" x="200" y="200" width="8" height="8" />
+  <rect class="duration1 delay5" x="208" y="192" width="16" height="16" />
+  <rect class="duration9 delay4" x="192" y="208" width="8" height="8" />
+  <rect class="duration9 delay8" x="200" y="208" width="8" height="8" />
+  <rect class="duration5 delay2" x="192" y="216" width="8" height="8" />
+  <rect class="duration5 delay9" x="200" y="216" width="8" height="8" />
+  <rect class="duration10 delay4" x="208" y="208" width="8" height="8" />
+  <rect class="duration5 delay5" x="216" y="208" width="8" height="8" />
+  <rect class="duration3 delay9" x="208" y="216" width="8" height="8" />
+  <rect class="duration10 delay4" x="216" y="216" width="8" height="8" />
+  <rect class="duration7 delay10" x="224" y="192" width="8" height="8" />
+  <rect class="duration4 delay4" x="232" y="192" width="8" height="8" />
+  <rect class="duration8 delay5" x="224" y="200" width="8" height="8" />
+  <rect class="duration3 delay10" x="232" y="200" width="8" height="8" />
+  <rect class="duration9 delay1" x="240" y="192" width="8" height="8" />
+  <rect class="duration8 delay7" x="248" y="192" width="8" height="8" />
+  <rect class="duration3 delay5" x="240" y="200" width="8" height="8" />
+  <rect class="duration9 delay6" x="248" y="200" width="8" height="8" />
+  <rect class="duration8 delay10" x="224" y="208" width="8" height="8" />
+  <rect class="duration6 delay6" x="232" y="208" width="8" height="8" />
+  <rect class="duration1 delay8" x="224" y="216" width="8" height="8" />
+  <rect class="duration7 delay8" x="232" y="216" width="8" height="8" />
+  <rect class="duration6 delay4" x="240" y="208" width="8" height="8" />
+  <rect class="duration8 delay2" x="248" y="208" width="8" height="8" />
+  <rect class="duration8 delay5" x="240" y="216" width="8" height="8" />
+  <rect class="duration3 delay3" x="248" y="216" width="8" height="8" />
+  <rect class="duration1 delay4" x="192" y="224" width="8" height="8" />
+  <rect class="duration3 delay9" x="200" y="224" width="8" height="8" />
+  <rect class="duration1 delay4" x="192" y="232" width="8" height="8" />
+  <rect class="duration8 delay8" x="200" y="232" width="8" height="8" />
+  <rect class="duration6 delay1" x="208" y="224" width="8" height="8" />
+  <rect class="duration8 delay7" x="216" y="224" width="8" height="8" />
+  <rect class="duration8 delay1" x="208" y="232" width="8" height="8" />
+  <rect class="duration4 delay9" x="216" y="232" width="8" height="8" />
+  <rect class="duration4 delay10" x="192" y="240" width="16" height="16" />
+  <rect class="duration2 delay9" x="208" y="240" width="8" height="8" />
+  <rect class="duration8 delay3" x="216" y="240" width="8" height="8" />
+  <rect class="duration5 delay6" x="208" y="248" width="8" height="8" />
+  <rect class="duration6 delay10" x="216" y="248" width="8" height="8" />
+  <rect class="duration9 delay9" x="224" y="224" width="8" height="8" />
+  <rect class="duration8 delay9" x="232" y="224" width="8" height="8" />
+  <rect class="duration2 delay1" x="224" y="232" width="8" height="8" />
+  <rect class="duration3 delay8" x="232" y="232" width="8" height="8" />
+  <rect class="duration1 delay2" x="240" y="224" width="8" height="8" />
+  <rect class="duration8 delay2" x="248" y="224" width="8" height="8" />
+  <rect class="duration9 delay8" x="240" y="232" width="8" height="8" />
+  <rect class="duration3 delay8" x="248" y="232" width="8" height="8" />
+  <rect class="duration8 delay10" x="224" y="240" width="16" height="16" />
+  <rect class="duration7 delay8" x="240" y="240" width="8" height="8" />
+  <rect class="duration8 delay10" x="248" y="240" width="8" height="8" />
+  <rect class="duration1 delay9" x="240" y="248" width="8" height="8" />
+  <rect class="duration7 delay10" x="248" y="248" width="8" height="8" />
+<text x="128" y="215">N</text>
 </svg>
