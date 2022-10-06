@@ -14,14 +14,6 @@
       text-anchor: middle;
       fill: black;
     }
-
-    #subtitle {
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: lighter;
-      font-size: 42px;
-      text-anchor: middle;
-      fill: black;
-    }
   </style>
   <rect id="bg" />
   <rect x="775" y="420" width="20" height="20" fill="hsl(117,70%,50%)" />
