@@ -3,16 +3,25 @@
   <defs>
     <style>
       #bg {
-        fill: hsl(0, 0%, 15%);
+        fill: white;
         width: 100%;
         height: 100%;
       }
 
-      text {
-        font-family: 'Source Code Pro', monospace;
+      #title {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
-        font-size: 90px;
+        font-size: 100px;
         text-anchor: middle;
+        fill: black;
+      }
+
+      #subtitle {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: lighter;
+        font-size: 42px;
+        text-anchor: middle;
+        fill: black;
       }
     </style>
     <linearGradient id="gradient" x1="0" x2="100%" y1="0" y2="0">
@@ -24,5 +33,6 @@
     </linearGradient>
   </defs>
   <rect id="bg" />
-  <text x="50%" y="385" fill="url(#gradient)">Python Notebooks</text>
+  <text id="title" x="50%" y="385">Python Notebooks</text>
+  <text id="subtitle" x="50%" y="445">A free and ongoing collection of cookbooks</text>
 </svg>
