@@ -1815,7 +1815,7 @@ body.is-touch {
     transition: 0.5s;
     position: absolute;
     text-align: center;
-    right: 0.5em;
+    left: 0.5em;
     bottom: 0.3em;
     font-size: 1em;
 
@@ -1850,6 +1850,46 @@ body.is-touch {
       animation-name: hover-size;
       animation-duration: 1s;
       animation-iteration-count: infinite;
+    }
+  }
+}
+
+/* Ko-fi */
+
+#kofi-button-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  right: 0.5em;
+  bottom: 0.7em;
+  z-index: 999;
+
+  .kofi-button {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(10px);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 1) !important;
+    }
+  }
+
+  &:hover > #close {
+    opacity: 1;
+  }
+
+  #close {
+    transition: 0.5s;
+    color: black;
+    opacity: 0;
+    position: absolute;
+    top: -1.5em;
+    right: 0.5em;
+    text-align: right !important;
+
+    &:hover {
+      cursor: pointer;
+      font-weight: bold !important;
     }
   }
 }
