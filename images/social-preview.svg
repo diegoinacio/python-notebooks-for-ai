@@ -7,7 +7,7 @@
       height: 100%;
     }
 
-    #PN {
+    #title {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-weight: lighter;
       font-size: 100px;
@@ -17,14 +17,14 @@
 
     #for {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 80px;
+      font-size: 60px;
     }
   </style>
   <rect id="bg" />
-  <rect x="665" y="400" width="20" height="20" fill="hsl(117,70%,50%)" />
-  <rect x="715" y="400" width="20" height="20" fill="hsl(189,70%,50%)" />
-  <rect x="765" y="400" width="20" height="20" fill="hsl(261,70%,50%)" />
-  <rect x="815" y="400" width="20" height="20" fill="hsl(333,70%,50%)" />
-  <rect x="865" y="400" width="20" height="20" fill="hsl(45,90%,50%)" />
-  <text id="PN" x="50%" y="385">Python Notebooks <tspan id="for">for</tspan> AI</text>
+  <rect x="675" y="400" width="20" height="20" fill="hsl(117,70%,50%)" />
+  <rect x="725" y="400" width="20" height="20" fill="hsl(189,70%,50%)" />
+  <rect x="775" y="400" width="20" height="20" fill="hsl(261,70%,50%)" />
+  <rect x="825" y="400" width="20" height="20" fill="hsl(333,70%,50%)" />
+  <rect x="875" y="400" width="20" height="20" fill="hsl(45,90%,50%)" />
+  <text id="title" x="50%" y="385">Python Notebooks <tspan id="for">for</tspan> AI</text>
 </svg>
