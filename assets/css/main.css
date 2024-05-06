@@ -90,7 +90,6 @@ body {
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
-  -webkit-animation: none !important;
   animation: none !important;
   transition: none !important;
 }
@@ -111,59 +110,33 @@ a {
   color: black;
   text-decoration: none;
 }
-@-webkit-keyframes hover-color {
-  0% {
-    color: inherit;
-  }
-  17% {
-    color: hsl(45deg, 90%, 50%);
-  }
-  33% {
-    color: hsl(117deg, 70%, 50%);
-  }
-  50% {
-    color: hsl(189deg, 70%, 50%);
-  }
-  66% {
-    color: hsl(261deg, 70%, 50%);
-  }
-  83% {
-    color: hsl(333deg, 70%, 50%);
-  }
-  100% {
-    color: inherit;
-  }
-}
 @keyframes hover-color {
   0% {
     color: inherit;
   }
   17% {
-    color: hsl(45deg, 90%, 50%);
+    color: hsl(45, 90%, 50%);
   }
   33% {
-    color: hsl(117deg, 70%, 50%);
+    color: hsl(117, 70%, 50%);
   }
   50% {
-    color: hsl(189deg, 70%, 50%);
+    color: hsl(189, 70%, 50%);
   }
   66% {
-    color: hsl(261deg, 70%, 50%);
+    color: hsl(261, 70%, 50%);
   }
   83% {
-    color: hsl(333deg, 70%, 50%);
+    color: hsl(333, 70%, 50%);
   }
   100% {
     color: inherit;
   }
 }
 a:hover {
-  -webkit-animation-name: hover-color;
-          animation-name: hover-color;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: hover-color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 strong,
@@ -291,37 +264,12 @@ pre code {
 }
 
 /* Loader */
-@-webkit-keyframes spinner-show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes spinner-show {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@-webkit-keyframes spinner-hide {
-  0% {
-    color: black;
-    z-index: 100001;
-    transform: scale(1) rotate(0deg);
-  }
-  99% {
-    color: white;
-    z-index: 100001;
-    transform: scale(0.5) rotate(360deg);
-  }
-  100% {
-    color: white;
-    z-index: -1;
-    transform: scale(0.5) rotate(360deg);
   }
 }
 @keyframes spinner-hide {
@@ -341,38 +289,12 @@ pre code {
     transform: scale(0.5) rotate(360deg);
   }
 }
-@-webkit-keyframes spinner-rotate {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
-  }
-}
 @keyframes spinner-rotate {
   0% {
     transform: scale(1) rotate(0deg);
   }
   100% {
     transform: scale(1) rotate(360deg);
-  }
-}
-@-webkit-keyframes overlay-hide {
-  0% {
-    opacity: 1;
-    z-index: 100000;
-  }
-  15% {
-    opacity: 1;
-    z-index: 100000;
-  }
-  99% {
-    opacity: 0;
-    z-index: 100000;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
   }
 }
 @keyframes overlay-hide {
@@ -409,7 +331,6 @@ body.landing:before {
   font-weight: 900;
 }
 body.landing:before {
-  -webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
   animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-hide 0.25s ease-in-out forwards !important;
   transform-origin: 50% 50%;
   color: black;
@@ -429,7 +350,6 @@ body.landing:before {
   z-index: -1;
 }
 body.landing:after {
-  -webkit-animation: overlay-hide 1.5s ease-in forwards !important;
   animation: overlay-hide 1.5s ease-in forwards !important;
   background: white;
   content: "";
@@ -443,12 +363,10 @@ body.landing:after {
   z-index: -1;
 }
 body.landing.is-preload:before {
-  -webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
   animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
   z-index: 100001;
 }
 body.landing.is-preload:after {
-  -webkit-animation: none !important;
   animation: none !important;
   opacity: 1;
   z-index: 100000;
@@ -2103,17 +2021,17 @@ ul.actions.fit.stacked {
     padding-top: 0;
   }
   ul.actions:not(.fixed) li input[type=submit],
-ul.actions:not(.fixed) li input[type=reset],
-ul.actions:not(.fixed) li input[type=button],
-ul.actions:not(.fixed) li button,
-ul.actions:not(.fixed) li .button {
+  ul.actions:not(.fixed) li input[type=reset],
+  ul.actions:not(.fixed) li input[type=button],
+  ul.actions:not(.fixed) li button,
+  ul.actions:not(.fixed) li .button {
     width: 100%;
   }
   ul.actions:not(.fixed) li input[type=submit].icon:before,
-ul.actions:not(.fixed) li input[type=reset].icon:before,
-ul.actions:not(.fixed) li input[type=button].icon:before,
-ul.actions:not(.fixed) li button.icon:before,
-ul.actions:not(.fixed) li .button.icon:before {
+  ul.actions:not(.fixed) li input[type=reset].icon:before,
+  ul.actions:not(.fixed) li input[type=button].icon:before,
+  ul.actions:not(.fixed) li button.icon:before,
+  ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5em;
   }
 }
@@ -2452,11 +2370,11 @@ input[type=button]:disabled,
   right: 0;
 }
 .spotlight.style1 .content {
-  border-color: hsl(333deg, 70%, 50%);
+  border-color: hsl(333, 70%, 50%);
 }
 .spotlight.style1 .content a:hover {
-  color: hsl(117deg, 70%, 50%) !important;
-  box-shadow: inset 0 0 0 1px hsl(117deg, 70%, 50%);
+  color: hsl(117, 70%, 50%) !important;
+  box-shadow: inset 0 0 0 1px hsl(117, 70%, 50%);
 }
 .spotlight.style1 .content p > span {
   font-weight: bold;
@@ -2468,18 +2386,18 @@ input[type=button]:disabled,
 }
 .spotlight.style1 .content ul.content-list li::before {
   content: "▪";
-  color: hsl(333deg, 70%, 50%);
+  color: hsl(333, 70%, 50%);
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
 .spotlight.style2 .content {
-  border-color: hsl(45deg, 90%, 50%);
+  border-color: hsl(45, 90%, 50%);
 }
 .spotlight.style2 .content a:hover {
-  color: hsl(189deg, 70%, 50%) !important;
-  box-shadow: inset 0 0 0 1px hsl(189deg, 70%, 50%);
+  color: hsl(189, 70%, 50%) !important;
+  box-shadow: inset 0 0 0 1px hsl(189, 70%, 50%);
 }
 .spotlight.style2 .content p > span {
   font-weight: bold;
@@ -2491,18 +2409,18 @@ input[type=button]:disabled,
 }
 .spotlight.style2 .content ul.content-list li::before {
   content: "▪";
-  color: hsl(45deg, 90%, 50%);
+  color: hsl(45, 90%, 50%);
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
 .spotlight.style3 .content {
-  border-color: hsl(117deg, 70%, 50%);
+  border-color: hsl(117, 70%, 50%);
 }
 .spotlight.style3 .content a:hover {
-  color: hsl(261deg, 70%, 50%) !important;
-  box-shadow: inset 0 0 0 1px hsl(261deg, 70%, 50%);
+  color: hsl(261, 70%, 50%) !important;
+  box-shadow: inset 0 0 0 1px hsl(261, 70%, 50%);
 }
 .spotlight.style3 .content p > span {
   font-weight: bold;
@@ -2514,18 +2432,18 @@ input[type=button]:disabled,
 }
 .spotlight.style3 .content ul.content-list li::before {
   content: "▪";
-  color: hsl(117deg, 70%, 50%);
+  color: hsl(117, 70%, 50%);
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
 .spotlight.style4 .content {
-  border-color: hsl(189deg, 70%, 50%);
+  border-color: hsl(189, 70%, 50%);
 }
 .spotlight.style4 .content a:hover {
-  color: hsl(333deg, 70%, 50%) !important;
-  box-shadow: inset 0 0 0 1px hsl(333deg, 70%, 50%);
+  color: hsl(333, 70%, 50%) !important;
+  box-shadow: inset 0 0 0 1px hsl(333, 70%, 50%);
 }
 .spotlight.style4 .content p > span {
   font-weight: bold;
@@ -2537,18 +2455,18 @@ input[type=button]:disabled,
 }
 .spotlight.style4 .content ul.content-list li::before {
   content: "▪";
-  color: hsl(189deg, 70%, 50%);
+  color: hsl(189, 70%, 50%);
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-left: -1.2em;
 }
 .spotlight.style5 .content {
-  border-color: hsl(261deg, 70%, 50%);
+  border-color: hsl(261, 70%, 50%);
 }
 .spotlight.style5 .content a:hover {
-  color: hsl(45deg, 90%, 50%) !important;
-  box-shadow: inset 0 0 0 1px hsl(45deg, 90%, 50%);
+  color: hsl(45, 90%, 50%) !important;
+  box-shadow: inset 0 0 0 1px hsl(45, 90%, 50%);
 }
 .spotlight.style5 .content p > span {
   font-weight: bold;
@@ -2560,7 +2478,7 @@ input[type=button]:disabled,
 }
 .spotlight.style5 .content ul.content-list li::before {
   content: "▪";
-  color: hsl(261deg, 70%, 50%);
+  color: hsl(261, 70%, 50%);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -2749,6 +2667,10 @@ body.landing #header {
   font-weight: 300;
   margin: 0;
 }
+#banner .content header h1 .for {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.5em;
+}
 #banner .content header p {
   margin: 0.5em 0 0 0;
   top: 0;
@@ -2912,26 +2834,6 @@ body.is-touch #banner {
 #footer .hidden-content::before {
   content: "🤍";
 }
-@-webkit-keyframes hover-size {
-  0% {
-    font-size: inherit;
-  }
-  13% {
-    font-size: 1.1em;
-  }
-  25% {
-    font-size: inherit;
-  }
-  37% {
-    font-size: 1.1em;
-  }
-  50% {
-    font-size: inherit;
-  }
-  100% {
-    font-size: inherit;
-  }
-}
 @keyframes hover-size {
   0% {
     font-size: inherit;
@@ -2955,12 +2857,9 @@ body.is-touch #banner {
 #footer .hidden-content:hover::before {
   content: "❤️";
   cursor: pointer;
-  -webkit-animation-name: hover-size;
-          animation-name: hover-size;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: hover-size;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 /* Ko-fi */
@@ -3002,9 +2901,9 @@ body.is-touch #banner {
 @media screen and (max-width: 1680px) {
   /* Basic */
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 13pt;
   }
 }
@@ -3012,9 +2911,9 @@ textarea {
 @media screen and (max-width: 1280px) {
   /* Basic */
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 11.5pt;
   }
   /* Spotlight */
@@ -3049,9 +2948,9 @@ textarea {
 @media screen and (max-width: 980px) {
   /* Basic */
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
   /* Spotlight */
@@ -3128,13 +3027,13 @@ textarea {
 @media screen and (max-width: 736px) {
   /* Basic */
   html,
-body {
+  body {
     overflow-x: hidden;
   }
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
   h2 {
@@ -3157,8 +3056,8 @@ textarea {
     font-size: 1em;
   }
   header h4 + p,
-header h5 + p,
-header h6 + p {
+  header h5 + p,
+  header h6 + p {
     font-size: 0.9em;
   }
   header.major {
@@ -3209,7 +3108,6 @@ header h6 + p {
   }
   /* Nav */
   #page-wrapper {
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: transform 0.5s ease;
     padding-bottom: 1px;
@@ -3275,7 +3173,6 @@ header h6 + p {
     width: 54px;
   }
   #navPanel {
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: translateX(-275px);
     transition: transform 0.5s ease;
@@ -3347,20 +3244,20 @@ header h6 + p {
 @media screen and (max-width: 480px) {
   /* Basic */
   html,
-body {
+  body {
     min-width: 320px;
   }
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
   /* Button */
   input[type=submit],
-input[type=reset],
-input[type=button],
-.button {
+  input[type=reset],
+  input[type=button],
+  .button {
     padding: 0;
   }
   /* Spotlight */

@@ -1686,6 +1686,11 @@ body.landing {
         font-size: 3.5em;
         font-weight: _font(weight);
         margin: 0;
+
+        .for {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 0.5em;
+        }
       }
 
       p {
